@@ -3,6 +3,7 @@ from modules.orders import queryDB
 import sys
 import datetime
 import logging
+
 from modules import configFile
 from PySide6.QtCore import *
 from PySide6.QtGui import *
@@ -10,12 +11,12 @@ from PySide6.QtWidgets import *
 import serial
 
 class Scaner(QObject):
-    logDirect = configFile.Config().configParser.get('LOGS', "logDirect")
+    """logDirect = configFile.Config().configParser.get('LOGS', "logDirect")
     logging.basicConfig(
         filename=logDirect + datetime.date.today().strftime('%d.%m.%Y') + '.log',
         filemode='a',
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        level=logging.INFO)
+        level=logging.INFO)"""
 
     running = False
     scanCodes = Signal(str)

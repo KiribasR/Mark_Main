@@ -56,15 +56,15 @@ class DatabaseConn:
         except pyodbc.DataError as err:
             logging.error(f'ошибка запроса {sql}, {err}')
 
-    def querySelectFetchall(self, sql):
+    def querySelectFetchall(self, sql, value):
         """     """
         try:
-            self.cursor.execute(sql)
-            logging.info(f'Выполнен запрос {sql}')
+            self.cursor.execute(sql, value)
+            logging.info(f'Выполнен запрос {sql} ({value})')
             listFetchall = self.cursor.fetchall()
             return listFetchall
         except pyodbc.DataError as err:
-            logging.error(f'ошибка запроса {sql}, {err}')
+            logging.error(f'ошибка запроса {sql}({value}), {err}')
 
     def queryInsert(self, sql, value):
         """Метод для  пакетной записи в БД"""

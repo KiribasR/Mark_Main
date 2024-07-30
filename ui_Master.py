@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MasterDrqCKj.ui'
+## Form generated from reading UI file 'MasterGvNNAT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.2
 ##
@@ -16,13 +16,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QButtonGroup,
-    QCheckBox, QDateEdit, QFrame, QGridLayout,
-    QHBoxLayout, QHeaderView, QLabel, QLayout,
-    QLineEdit, QMainWindow, QPlainTextEdit, QPushButton,
-    QRadioButton, QSizePolicy, QSpacerItem, QStackedWidget,
-    QTableWidget, QTableWidgetItem, QToolBox, QVBoxLayout,
-    QWidget)
-from modules import resources_rc
+    QCheckBox, QComboBox, QDateEdit, QFrame,
+    QGridLayout, QHBoxLayout, QHeaderView, QLabel,
+    QLayout, QLineEdit, QMainWindow, QPlainTextEdit,
+    QPushButton, QRadioButton, QSizePolicy, QSpacerItem,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QToolBox,
+    QVBoxLayout, QWidget)
+import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -42,6 +42,7 @@ class Ui_MainWindow(object):
 "	color: rgb(221, 221, 221);\n"
 "	font: 10pt \"Segoe UI\";\n"
 "}\n"
+"\n"
 "\n"
 "/*_______________________________________________________\n"
 "Main Container */\n"
@@ -68,61 +69,88 @@ class Ui_MainWindow(object):
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
 "	border-left: 22px solid transparent;\n"
+"\n"
+"	border-top-left-radius: 20px;\n"
+"	border-bottom-left-radius: 20px;\n"
+"\n"
 "	background-color: transparent;\n"
 "	text-align: left;\n"
 "	padding-left: 44px;\n"
+"\n"
+"\n"
+"}\n"
+"/*_____________________*/\n"
+"\n"
+"#toggleBox .QPushButton  {	\n"
+"	background-position: left center;\n"
+"	border-left: 10px;\n"
+"    background-repeat: no-repeat;\n"
+""
+                        "	border-top-left-radius: 15px;\n"
+"	border-bottom-left-radius: 15px;\n"
+"	/*border-left: 5px solid transparent;\n"
+"	background-color: transparent;*/\n"
+"	text-align: left;\n"
+"	padding-left: 20px;\n"
+"	padding-right: 00px;\n"
 "}\n"
 "\n"
-"#toggleBox .QPushButton {	\n"
-"	background-position: left center;\n"
-"    background-repeat: no-repeat;\n"
-"	border: none;\n"
-"	border-left: 22px solid transparent;\n"
-"	background-color: transparent;\n"
-"	text-align: left;\n"
-"	padding-left: 44px;\n"
-"}\n"
-"#"
-                        "toggleButton:hover {\n"
+"#toggleButton:hover {\n"
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#toggleButton:pressed {\n"
-"	background-color: rgb(189, 147, 249);\n"
+"	background-color: rgb(36, 149, 255);\n"
 "}\n"
 "\n"
 "/*_________________________________________*/\n"
-"#topMenu .QPushButton {	\n"
+"#topMenu .QPushButton  {	\n"
 "	background-position: left center;\n"
+"	border-left: 10px;\n"
 "    background-repeat: no-repeat;\n"
-"	border: none;\n"
-"	border-left: 22px solid transparent;\n"
-"	background-color: transparent;\n"
+"	border-top-left-radius: 15px;\n"
+"	border-bottom-left-radius: 15px;\n"
+"	/*border-left: 5px solid transparent;\n"
+"	background-color: transparent;*/\n"
 "	text-align: left;\n"
-"	padding-left: 44px;\n"
+"	padding-left: 20px;\n"
+"	padding-right: 00px;\n"
 "}\n"
 "#topMenu .QPushButton:hover {\n"
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#topMenu .QPushButton:pressed {	\n"
-"	background-color: rgb(189, 147, 249);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"#topMenu .QPushButton"
+                        ":isChecked{\n"
+"	background-color: rgb(255, 0, 0);\n"
+"}\n"
+"\n"
+"#bottomMenu .QPushButton  {	\n"
+"	background-position: left center;\n"
+"	border-left: 10px;\n"
+"    background-repeat: no-repeat;\n"
+"	border-top-left-radius: 15px;\n"
+"	border-bottom-left-radius: 15px;\n"
+"	/*border-left: 5px solid transparent;\n"
+"	background-color: transparent;*/\n"
+"	text-align: left;\n"
+"	padding-left: 20px;\n"
+"	padding-right: 00px;\n"
+"}\n"
+"#bottomMenu .QPushButton:hover {\n"
+"	background-color: rgb(40, 44, 52);\n"
+"}\n"
+"#bottomMenu .QPushButton:pressed {	\n"
+"	background-color: rgb(36, 149, 255);\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
-"/*________________________________________*/\n"
-"#bottomMenu .QPushButton {\n"
-"	background-position: left center;\n"
-"    background-repeat: no-repeat;\n"
-"	border: none;\n"
-"	border-left: 22px solid transparent;\n"
-"	background-color: transparent;\n"
-"	text-align: left;\n"
-"	padding-left: 44px;\n"
-"}\n"
 "\n"
 "\n"
 "/*_______________________________________*/\n"
-""
-                        "#accMenuContainer {	\n"
+"#accMenuContainer {	\n"
 "	background-color: rgb(44, 49, 58);\n"
 "}\n"
 "#accTopMenu{	\n"
@@ -134,7 +162,8 @@ class Ui_MainWindow(object):
 "\n"
 "/* Btn Close */\n"
 "#closeAccButton { background-color: rgba(255, 255, 255, 0); border: none;  border-radius: 5px; }\n"
-"#closeAccButton:hover { background-color: rgb(196, 161, 249); border-style: solid; border-radius: 4px; }\n"
+""
+                        "#closeAccButton:hover { background-color: rgb(196, 161, 249); border-style: solid; border-radius: 4px; }\n"
 "#closeAccButton:pressed { background-color: rgb(180, 141, 238); border-style: solid; border-radius: 4px; }\n"
 "\n"
 "#loginForm{\n"
@@ -156,8 +185,7 @@ class Ui_MainWindow(object):
 "	background-position:center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
-"	border-radius"
-                        ": 20px;\n"
+"	border-radius: 20px;\n"
 "	background-color: transparent;\n"
 "	text-align: left;\n"
 "	padding-left: 5px;\n"
@@ -171,7 +199,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "#loginFrame .QLineEdit{\n"
-"	color: rgb(255, 255, 255);\n"
+"	color: rgb("
+                        "255, 255, 255);\n"
 "	border: none;\n"
 "	border-radius:15px;\n"
 "	padding:10px 10px;\n"
@@ -201,8 +230,7 @@ class Ui_MainWindow(object):
 "#registerButton:hover {\n"
 "	background-color: rgb(255, 255, 127);\n"
 "}\n"
-"#regis"
-                        "terButton:pressed {	\n"
+"#registerButton:pressed {	\n"
 "	background-color: rgb(33, 37, 43);\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
@@ -215,7 +243,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "#topCentralContainer{	\n"
-"	border:none;\n"
+"	border:non"
+                        "e;\n"
 "	border-color: rgb(66, 66, 66);\n"
 "	background-color: rgb(66, 66, 66);\n"
 "}\n"
@@ -231,8 +260,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(0, 85, 127);\n"
 "	padding: 10px;\n"
 "	border-radius: 5px;\n"
-"	gridline-color: rgb"
-                        "(44, 49, 58);\n"
+"	gridline-color: rgb(44, 49, 58);\n"
 "	border-bottom: 1px solid rgb(44, 49, 60);\n"
 "	text-align: center;\n"
 "}\n"
@@ -244,7 +272,8 @@ class Ui_MainWindow(object):
 "}\n"
 "QTableWidget::item:selected{\n"
 "	background-color: rgb(189, 147, 249);\n"
-"}\n"
+"}"
+                        "\n"
 "QHeaderView::section{\n"
 "	background-color: rgb(33, 37, 43);\n"
 "	max-width: 30px;\n"
@@ -269,8 +298,7 @@ class Ui_MainWindow(object):
 "    border: 1px solid rgb(44, 49, 60);\n"
 "}\n"
 "\n"
-"/* /////////////////////////////////"
-                        "////////////////////////////////////////////////////////////////\n"
+"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "PlainTextEdit */\n"
 "QListWidget{\n"
 "	background-color: rgb(27, 29, 35);\n"
@@ -280,7 +308,8 @@ class Ui_MainWindow(object):
 "	selection-background-color: rgb(255, 121, 198);\n"
 "}\n"
 "QListWidget:hover {\n"
-"	border: 2px solid rgb(64, 71, 88);\n"
+"	border: "
+                        "2px solid rgb(64, 71, 88);\n"
 "}\n"
 "QListWidget:focus {\n"
 "	border: 2px solid rgb(91, 101, 124);\n"
@@ -306,8 +335,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "#linePage .QPushButton {	\n"
-"	background-positio"
-                        "n: left center;\n"
+"	background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
 "	border-left: 22px solid transparent;\n"
@@ -319,7 +347,8 @@ class Ui_MainWindow(object):
 "	background-color: rgb(40, 44, 52);\n"
 "}\n"
 "#linePage.QPushButton:pressed {\n"
-"	background-color: rgb(189, 147, 249);\n"
+"	"
+                        "background-color: rgb(189, 147, 249);\n"
 "}\n"
 "\n"
 "QLineEdit {\n"
@@ -327,7 +356,153 @@ class Ui_MainWindow(object):
 "	font: 700 12pt \"Segoe UI\";\n"
 "}\n"
 "\n"
-"")
+"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"ScrollBars */\n"
+"QScrollBar:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(255, 255, 255);\n"
+"    height: 8px;\n"
+"    margin: 0px 21px 0 21px;\n"
+"	border-radius: 0px;\n"
+"}\n"
+"QScrollBar::handle:horizontal {\n"
+"    background: rgb(36, 149, 255);\n"
+"    min-width: 25px;\n"
+"	border-radius: 4px\n"
+"}\n"
+"QScrollBar::add-line:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"    width: 20px;\n"
+"	border-top-right-radius: 4px;\n"
+"    border-bottom-right-radius: 4px;\n"
+"    subcontrol-position: right;\n"
+"    subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"    width: 20px;\n"
+"	border-top-left-radius: 4px;\n"
+"    border-bottom-left-radius: 4px"
+                        ";\n"
+"    subcontrol-position: left;\n"
+"    subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal\n"
+"{\n"
+"     background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal\n"
+"{\n"
+"     background: none;\n"
+"}\n"
+" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(255, 255, 255);\n"
+"    width: 8px;\n"
+"    margin: 21px 0 21px 0;\n"
+"	border-radius: 0px;\n"
+" }\n"
+" QScrollBar::handle:vertical {	\n"
+"	background: rgb(36, 149, 255);\n"
+"    min-height: 25px;\n"
+"	border-radius: 4px\n"
+" }\n"
+" QScrollBar::add-line:vertical {\n"
+"     border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"     height: 20px;\n"
+"	border-bottom-left-radius: 4px;\n"
+"    border-bottom-right-radius: 4px;\n"
+"     subcontrol-position: bottom;\n"
+"     subcontrol-origin: margin;\n"
+" }\n"
+" QScrollBar::sub-line:vertical {\n"
+"	border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"     height: 20px;\n"
+"	border-top-left-radius: 4px;\n"
+""
+                        "    border-top-right-radius: 4px;\n"
+"     subcontrol-position: top;\n"
+"     subcontrol-origin: margin;\n"
+" }\n"
+" QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"     background: none;\n"
+" }\n"
+"\n"
+" QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"     background: none;\n"
+" }\n"
+"\n"
+"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"CheckBox */\n"
+"QCheckBox::indicator {\n"
+"    border: 3px solid 36, 149, 255;\n"
+"	width: 15px;\n"
+"	height: 15px;\n"
+"	border-radius: 10px;\n"
+"    background: transparent;\n"
+"}\n"
+"QCheckBox::indicator:hover {\n"
+"    border: 3px solid rgb(58, 66, 81);\n"
+"}\n"
+"QCheckBox::indicator:checked {\n"
+"    background: 3px solid rgb(36, 149, 255);\n"
+"	border: 3px solid rgb(52, 59, 72);	\n"
+"	\n"
+"	background-image: url(:/icons/images/icons/cil-check-alt.png);\n"
+"}\n"
+"\n"
+"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"ComboB"
+                        "ox */\n"
+"QComboBox{\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	border-radius: 5px;\n"
+"	border: 2px solid rgb(0, 0, 0);\n"
+"	padding: 5px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"QComboBox:hover{\n"
+"	border: 2px solid rgb(64, 71, 88);\n"
+"}\n"
+"QComboBox::drop-down {\n"
+"	subcontrol-origin: padding;\n"
+"	subcontrol-position: top right;\n"
+"	width: 25px; \n"
+"	border-left-width: 3px;\n"
+"	border-left-color: rgba(39, 44, 54, 150);\n"
+"	border-left-style: solid;\n"
+"	border-top-right-radius: 3px;\n"
+"	border-bottom-right-radius: 3px;	\n"
+"	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);\n"
+"	background-position: center;\n"
+"	background-repeat: no-reperat;\n"
+" }\n"
+"QComboBox QAbstractItemView {\n"
+"	color: rgb(255, 121, 198);	\n"
+"	background-color: rgb(33, 37, 43);\n"
+"	padding: 10px;\n"
+"	selection-background-color: rgb(39, 44, 54);\n"
+"}\n"
+"\n"
+"/*LineEdit */\n"
+"QLineEdit {\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	border-radius: 5px;\n"
+"	border: 1px solid rgb(0, 0, 0);\n"
+"	paddi"
+                        "ng-left: 10px;\n"
+"	selection-color: rgb(255, 255, 255);\n"
+"	selection-background-color: rgb(255, 121, 198);\n"
+"}\n"
+"QLineEdit:hover {\n"
+"	border: 2px solid rgb(64, 71, 88);\n"
+"}\n"
+"QLineEdit:focus {\n"
+"	border: 2px solid rgb(91, 101, 124);}")
         self.verticalLayout = QVBoxLayout(self.styleSheet)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -345,6 +520,9 @@ class Ui_MainWindow(object):
         self.leftMenuContainer.setObjectName(u"leftMenuContainer")
         self.leftMenuContainer.setMinimumSize(QSize(0, 0))
         self.leftMenuContainer.setMaximumSize(QSize(60, 16777215))
+        self.leftMenuContainer.setStyleSheet(u"QFrame {\n"
+"	border: none;\n"
+"}")
         self.leftMenuContainer.setFrameShape(QFrame.StyledPanel)
         self.leftMenuContainer.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.leftMenuContainer)
@@ -375,14 +553,20 @@ class Ui_MainWindow(object):
 
         self.leftMenuFrame = QFrame(self.leftMenuContainer)
         self.leftMenuFrame.setObjectName(u"leftMenuFrame")
+        self.leftMenuFrame.setStyleSheet(u"QFrame {\n"
+"	border: none;\n"
+"}")
         self.leftMenuFrame.setFrameShape(QFrame.StyledPanel)
         self.leftMenuFrame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.leftMenuFrame)
         self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_4.setContentsMargins(3, 0, 0, 0)
         self.toggleBox = QFrame(self.leftMenuFrame)
         self.toggleBox.setObjectName(u"toggleBox")
+        self.toggleBox.setStyleSheet(u"QFrame {\n"
+"	border: none;\n"
+"}")
         self.toggleBox.setFrameShape(QFrame.StyledPanel)
         self.toggleBox.setFrameShadow(QFrame.Raised)
         self.verticalLayout_5 = QVBoxLayout(self.toggleBox)
@@ -392,7 +576,10 @@ class Ui_MainWindow(object):
         self.toggleButton = QPushButton(self.toggleBox)
         self.toggleButton.setObjectName(u"toggleButton")
         self.toggleButton.setMinimumSize(QSize(0, 50))
-        self.toggleButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-menu.png);")
+        self.toggleButton.setStyleSheet(u"")
+        icon = QIcon()
+        icon.addFile(u":/icons/images/icons/cil-menu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.toggleButton.setIcon(icon)
         self.toggleButton.setIconSize(QSize(50, 50))
 
         self.verticalLayout_5.addWidget(self.toggleButton)
@@ -402,57 +589,77 @@ class Ui_MainWindow(object):
 
         self.topMenu = QFrame(self.leftMenuFrame)
         self.topMenu.setObjectName(u"topMenu")
+        self.topMenu.setStyleSheet(u"QFrame {\n"
+"	border: none;\n"
+"}")
         self.topMenu.setFrameShape(QFrame.StyledPanel)
         self.topMenu.setFrameShadow(QFrame.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.topMenu)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.createOrderButton = QPushButton(self.topMenu)
+        self.createOrderButton.setObjectName(u"createOrderButton")
+        self.createOrderButton.setMinimumSize(QSize(0, 50))
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/images/icons/cil-task.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.createOrderButton.setIcon(icon1)
+
+        self.verticalLayout_6.addWidget(self.createOrderButton)
+
+        self.ordersButton = QPushButton(self.topMenu)
+        self.ordersButton.setObjectName(u"ordersButton")
+        self.ordersButton.setMinimumSize(QSize(0, 50))
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/images/icons/icons8-\u0441\u043f\u0438\u0441\u043e\u043a-\u0434\u0435\u043b-60.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.ordersButton.setIcon(icon2)
+        self.ordersButton.setIconSize(QSize(18, 18))
+        self.ordersButton.setCheckable(True)
+
+        self.verticalLayout_6.addWidget(self.ordersButton)
+
         self.lineButton = QPushButton(self.topMenu)
         self.lineButton.setObjectName(u"lineButton")
         self.lineButton.setMinimumSize(QSize(0, 50))
         self.lineButton.setLayoutDirection(Qt.LeftToRight)
-        self.lineButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-link-alt.png);")
-        self.lineButton.setIconSize(QSize(50, 50))
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/images/icons/icons8-\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e-60.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.lineButton.setIcon(icon3)
+        self.lineButton.setIconSize(QSize(18, 18))
+        self.lineButton.setCheckable(True)
+        self.lineButton.setChecked(False)
 
         self.verticalLayout_6.addWidget(self.lineButton)
 
         self.searchButton = QPushButton(self.topMenu)
         self.searchButton.setObjectName(u"searchButton")
         self.searchButton.setMinimumSize(QSize(0, 50))
-        self.searchButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-magnifying-glass.png);")
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/images/icons/cil-magnifying-glass.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.searchButton.setIcon(icon4)
+        self.searchButton.setCheckable(True)
 
         self.verticalLayout_6.addWidget(self.searchButton)
-
-        self.ordersButton = QPushButton(self.topMenu)
-        self.ordersButton.setObjectName(u"ordersButton")
-        self.ordersButton.setMinimumSize(QSize(0, 50))
-        self.ordersButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-view-module.png);")
-        self.ordersButton.setIconSize(QSize(50, 50))
-
-        self.verticalLayout_6.addWidget(self.ordersButton)
 
         self.printFrameButton = QPushButton(self.topMenu)
         self.printFrameButton.setObjectName(u"printFrameButton")
         self.printFrameButton.setMinimumSize(QSize(0, 50))
-        self.printFrameButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-print.png);")
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/images/icons/cil-print.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.printFrameButton.setIcon(icon5)
+        self.printFrameButton.setCheckable(True)
 
         self.verticalLayout_6.addWidget(self.printFrameButton)
 
         self.rollFrameButton = QPushButton(self.topMenu)
         self.rollFrameButton.setObjectName(u"rollFrameButton")
         self.rollFrameButton.setMinimumSize(QSize(0, 50))
-        self.rollFrameButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-cut.png);")
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/images/icons/cil-cut.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.rollFrameButton.setIcon(icon6)
+        self.rollFrameButton.setCheckable(True)
 
         self.verticalLayout_6.addWidget(self.rollFrameButton)
-
-        self.settingsButton = QPushButton(self.topMenu)
-        self.settingsButton.setObjectName(u"settingsButton")
-        self.settingsButton.setMinimumSize(QSize(0, 50))
-        self.settingsButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-settings.png);")
-        self.settingsButton.setIconSize(QSize(50, 50))
-
-        self.verticalLayout_6.addWidget(self.settingsButton)
 
 
         self.verticalLayout_4.addWidget(self.topMenu, 0, Qt.AlignTop)
@@ -463,20 +670,25 @@ class Ui_MainWindow(object):
 
         self.bottomMenu = QFrame(self.leftMenuFrame)
         self.bottomMenu.setObjectName(u"bottomMenu")
+        self.bottomMenu.setStyleSheet(u"QFrame {\n"
+"	border: none;\n"
+"}")
         self.bottomMenu.setFrameShape(QFrame.StyledPanel)
         self.bottomMenu.setFrameShadow(QFrame.Raised)
         self.verticalLayout_7 = QVBoxLayout(self.bottomMenu)
         self.verticalLayout_7.setSpacing(0)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.exitButton = QPushButton(self.bottomMenu)
-        self.exitButton.setObjectName(u"exitButton")
-        icon = QIcon()
-        icon.addFile(u":/icons/images/icons/cil-exit-to-app.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.exitButton.setIcon(icon)
-        self.exitButton.setIconSize(QSize(50, 50))
+        self.settingsButton = QPushButton(self.bottomMenu)
+        self.settingsButton.setObjectName(u"settingsButton")
+        self.settingsButton.setMinimumSize(QSize(0, 50))
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/images/icons/cil-settings.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.settingsButton.setIcon(icon7)
+        self.settingsButton.setIconSize(QSize(50, 50))
+        self.settingsButton.setCheckable(True)
 
-        self.verticalLayout_7.addWidget(self.exitButton)
+        self.verticalLayout_7.addWidget(self.settingsButton)
 
 
         self.verticalLayout_4.addWidget(self.bottomMenu, 0, Qt.AlignBottom)
@@ -516,9 +728,9 @@ class Ui_MainWindow(object):
         self.closeAccButton = QPushButton(self.accTopMenu)
         self.closeAccButton.setObjectName(u"closeAccButton")
         self.closeAccButton.setMinimumSize(QSize(28, 50))
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/images/icons/icon_close.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.closeAccButton.setIcon(icon1)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/images/icons/icon_close.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.closeAccButton.setIcon(icon8)
         self.closeAccButton.setIconSize(QSize(50, 50))
 
         self.gridLayout.addWidget(self.closeAccButton, 0, 1, 1, 1, Qt.AlignRight)
@@ -595,9 +807,9 @@ class Ui_MainWindow(object):
         self.loginButton.setObjectName(u"loginButton")
         self.loginButton.setMinimumSize(QSize(170, 40))
         self.loginButton.setMaximumSize(QSize(150, 40))
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/images/icons/icons8-\u0432\u043e\u0439\u0442\u0438-50.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.loginButton.setIcon(icon2)
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/images/icons/icons8-\u0432\u043e\u0439\u0442\u0438-50.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.loginButton.setIcon(icon9)
         self.loginButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_11.addWidget(self.loginButton, 0, Qt.AlignHCenter)
@@ -678,9 +890,9 @@ class Ui_MainWindow(object):
         self.registerButton.setObjectName(u"registerButton")
         self.registerButton.setMinimumSize(QSize(170, 40))
         self.registerButton.setMaximumSize(QSize(150, 40))
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/images/icons/icons8-\u0433\u0430\u043b\u043e\u0447\u043a\u0430-\u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u043d\u043e\u0433\u043e-\u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430-\u0438\u043d\u0441\u0442\u0430\u0433\u0440\u0430\u043c-50.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.registerButton.setIcon(icon3)
+        icon10 = QIcon()
+        icon10.addFile(u":/icons/images/icons/icons8-\u0433\u0430\u043b\u043e\u0447\u043a\u0430-\u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u043d\u043e\u0433\u043e-\u0430\u043a\u043a\u0430\u0443\u043d\u0442\u0430-\u0438\u043d\u0441\u0442\u0430\u0433\u0440\u0430\u043c-50.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.registerButton.setIcon(icon10)
         self.registerButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_14.addWidget(self.registerButton, 0, Qt.AlignHCenter)
@@ -736,7 +948,9 @@ class Ui_MainWindow(object):
         self.toptop.setFrameShape(QFrame.StyledPanel)
         self.toptop.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_40 = QHBoxLayout(self.toptop)
+        self.horizontalLayout_40.setSpacing(0)
         self.horizontalLayout_40.setObjectName(u"horizontalLayout_40")
+        self.horizontalLayout_40.setContentsMargins(0, 0, 0, 0)
         self.titleRightInfo = QLabel(self.toptop)
         self.titleRightInfo.setObjectName(u"titleRightInfo")
         sizePolicy.setHeightForWidth(self.titleRightInfo.sizePolicy().hasHeightForWidth())
@@ -758,27 +972,27 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.minimizeButton = QPushButton(self.rightButtons)
         self.minimizeButton.setObjectName(u"minimizeButton")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/images/icons/cil-minus.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.minimizeButton.setIcon(icon4)
+        icon11 = QIcon()
+        icon11.addFile(u":/icons/images/icons/cil-minus.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.minimizeButton.setIcon(icon11)
         self.minimizeButton.setIconSize(QSize(30, 30))
 
         self.horizontalLayout_3.addWidget(self.minimizeButton)
 
         self.restoreButton = QPushButton(self.rightButtons)
         self.restoreButton.setObjectName(u"restoreButton")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.restoreButton.setIcon(icon5)
+        icon12 = QIcon()
+        icon12.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.restoreButton.setIcon(icon12)
         self.restoreButton.setIconSize(QSize(30, 30))
 
         self.horizontalLayout_3.addWidget(self.restoreButton)
 
         self.closeButton = QPushButton(self.rightButtons)
         self.closeButton.setObjectName(u"closeButton")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/images/icons/cil-x.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.closeButton.setIcon(icon6)
+        icon13 = QIcon()
+        icon13.addFile(u":/icons/images/icons/cil-x.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.closeButton.setIcon(icon13)
         self.closeButton.setIconSize(QSize(30, 30))
 
         self.horizontalLayout_3.addWidget(self.closeButton)
@@ -806,7 +1020,91 @@ class Ui_MainWindow(object):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
         self.stackedWidget.setSizePolicy(sizePolicy2)
-        self.stackedWidget.setStyleSheet(u"background: transparent;")
+        self.stackedWidget.setStyleSheet(u"QFrame{\n"
+"	background-color: rgb(235, 235, 235);\n"
+"border: none;\n"
+"border-radius: 20px;\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"	font: 10pt \"Segoe UI\";\n"
+"	background-position:center;\n"
+"    background-repeat: no-repeat;\n"
+"	border: none;\n"
+"	border-radius: 20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	text-align: center;\n"
+"	padding-left: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 66, 66);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
+"\n"
+"QTableWidget {	\n"
+"	background-color: transparent;\n"
+"	padding: 10px;\n"
+"	border-radius: 0px;\n"
+"	gridline-color: rgb(245, 246, 250);\n"
+"	border-bottom: 0px solid rgb(44, 49, 60);\n"
+"	text-align: center;\n"
+"}\n"
+"QTableWidget::item{\n"
+"	color: rgb(66, 66, 66);\n"
+"	border-color: rgb(36, 149, 255);\n"
+"	padding-left: 25px;\n"
+"	padding-right: 5px;\n"
+"	gridline-color: rgb(245, 246, 250);\n"
+"	text-align: center;\n"
+"}\n"
+"QTableWid"
+                        "get::item:selected{\n"
+"	background-color: rgb(36, 149, 255);\n"
+"}\n"
+"\n"
+"QHeaderView::section{\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	max-width: 30px;\n"
+"	border: 1px solid rgb(44, 49, 58);\n"
+"	border-style: none;\n"
+"    border-bottom: 1px solid rgb(44, 49, 60);\n"
+"    border-right: 1px solid rgb(44, 49, 60);\n"
+"}\n"
+"QTableWidget::horizontalHeader {	\n"
+"	background-color: rgb(33, 37, 43);\n"
+"}\n"
+"QHeaderView::section:horizontal {\n"
+"    border: 1px solid rgb(36, 149, 255);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	padding: 3px;\n"
+"	border-top-left-radius: 10px;\n"
+"    border-top-right-radius: 10px;\n"
+"\n"
+"	border-bottom-left-radius: 10px;\n"
+"	border-bottom-right-radius: 10px;}\n"
+"\n"
+"/*LineEdit */\n"
+"QLineEdit {\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	border-radius: 5px;\n"
+"	border: 1px solid rgb(0, 0, 0);\n"
+"	padding-left: 10px;\n"
+"	selection-color: rgb(255, 255, 255);\n"
+"	selection-background-color: rgb(255, 121, 198);\n"
+"}\n"
+"QLin"
+                        "eEdit:hover {\n"
+"	border: 2px solid rgb(64, 71, 88);\n"
+"}\n"
+"QLineEdit:focus {\n"
+"	border: 2px solid rgb(91, 101, 124);\n"
+"}")
         self.linePage = QWidget()
         self.linePage.setObjectName(u"linePage")
         sizePolicy2.setHeightForWidth(self.linePage.sizePolicy().hasHeightForWidth())
@@ -882,7 +1180,7 @@ class Ui_MainWindow(object):
                         "\n"
 "}\n"
 "QTableWidget::item:selected{\n"
-"	background-color: rgb(36, 149, 255);\n"
+"	background-color: rgb(217, 217, 217);\n"
 "}\n"
 "\n"
 "QHeaderView::section{\n"
@@ -906,7 +1204,9 @@ class Ui_MainWindow(object):
 "\n"
 "	border-bottom-left-radius: 10px;\n"
 "	border-bottom-right-radius: 10px;\n"
-"}")
+"}\n"
+"\n"
+"")
         self.lineTabContainer.setFrameShape(QFrame.StyledPanel)
         self.lineTabContainer.setFrameShadow(QFrame.Raised)
         self.verticalLayout_22 = QVBoxLayout(self.lineTabContainer)
@@ -971,9 +1271,9 @@ class Ui_MainWindow(object):
         self.refreshLineButton.setMinimumSize(QSize(150, 0))
         self.refreshLineButton.setMaximumSize(QSize(250, 16777215))
         self.refreshLineButton.setStyleSheet(u"")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/images/icons/cil-reload.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.refreshLineButton.setIcon(icon7)
+        icon14 = QIcon()
+        icon14.addFile(u":/icons/images/icons/cil-reload.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.refreshLineButton.setIcon(icon14)
         self.refreshLineButton.setIconSize(QSize(50, 50))
 
         self.verticalLayout_22.addWidget(self.refreshLineButton, 0, Qt.AlignHCenter)
@@ -986,7 +1286,11 @@ class Ui_MainWindow(object):
         sizePolicy3.setHeightForWidth(self.lineStatusContainer.sizePolicy().hasHeightForWidth())
         self.lineStatusContainer.setSizePolicy(sizePolicy3)
         self.lineStatusContainer.setMinimumSize(QSize(0, 0))
-        self.lineStatusContainer.setStyleSheet(u"#lineStatusContainer{\n"
+        self.lineStatusContainer.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#lineStatusContainer{\n"
 "background-color: rgb(255, 255, 255);\n"
 "border: none;\n"
 "border-radius: 20px;\n"
@@ -1026,10 +1330,10 @@ class Ui_MainWindow(object):
 "	color: rgb(66, 66, 66);\n"
 "	border-color: rgb(36, 149, 255);\n"
 "	padding-left: 25px;\n"
-"	padding-right: 5px;\n"
+"	padding-right: "
+                        "5px;\n"
 "	gridline-color: rgb(245, 246, 250);\n"
-"	text-align: cent"
-                        "er;\n"
+"	text-align: center;\n"
 "}\n"
 "QTableWidget::item:selected{\n"
 "	background-color: rgb(36, 149, 255);\n"
@@ -1072,8 +1376,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
         self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
         self.batchOnLine_Tab = QTableWidget(self.frame_6)
-        if (self.batchOnLine_Tab.columnCount() < 4):
-            self.batchOnLine_Tab.setColumnCount(4)
+        if (self.batchOnLine_Tab.columnCount() < 5):
+            self.batchOnLine_Tab.setColumnCount(5)
         font3 = QFont()
         font3.setPointSize(12)
         font3.setBold(True)
@@ -1089,10 +1393,16 @@ class Ui_MainWindow(object):
         __qtablewidgetitem5 = QTableWidgetItem()
         __qtablewidgetitem5.setFont(font3);
         self.batchOnLine_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem5)
+        __qtablewidgetitem6 = QTableWidgetItem()
+        __qtablewidgetitem6.setFont(font3);
+        self.batchOnLine_Tab.setHorizontalHeaderItem(4, __qtablewidgetitem6)
         self.batchOnLine_Tab.setObjectName(u"batchOnLine_Tab")
         sizePolicy3.setHeightForWidth(self.batchOnLine_Tab.sizePolicy().hasHeightForWidth())
         self.batchOnLine_Tab.setSizePolicy(sizePolicy3)
         self.batchOnLine_Tab.setMinimumSize(QSize(0, 0))
+        self.batchOnLine_Tab.setStyleSheet(u"QTableWidget::item:selected{\n"
+"	background-color: rgb(217, 217, 217);\n"
+"}")
         self.batchOnLine_Tab.setFrameShape(QFrame.NoFrame)
         self.batchOnLine_Tab.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
         self.batchOnLine_Tab.setAutoScroll(True)
@@ -1177,7 +1487,10 @@ class Ui_MainWindow(object):
         self.frame_11 = QFrame(self.lineStatusContainer)
         self.frame_11.setObjectName(u"frame_11")
         self.frame_11.setMaximumSize(QSize(16777215, 60))
-        self.frame_11.setStyleSheet(u"\n"
+        self.frame_11.setStyleSheet(u"QPushButton{\n"
+"	background-color: rgb(119, 119, 119);\n"
+"	color: rgb(0, 0, 0);\n"
+"}\n"
 "\n"
 "QPushButton:hover {\n"
 "	background-color: rgb(66, 66, 66);\n"
@@ -1208,9 +1521,9 @@ class Ui_MainWindow(object):
 "color: rgb(193, 193, 193);\n"
 "}\n"
 "")
-        icon8 = QIcon()
-        icon8.addFile(u":/icons/images/icons/cil-ban.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.deleteOrderButton.setIcon(icon8)
+        icon15 = QIcon()
+        icon15.addFile(u":/icons/images/icons/cil-ban.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.deleteOrderButton.setIcon(icon15)
         self.deleteOrderButton.setIconSize(QSize(50, 50))
 
         self.horizontalLayout_5.addWidget(self.deleteOrderButton)
@@ -1234,9 +1547,9 @@ class Ui_MainWindow(object):
 "	color: rgb(193, 193, 193);\n"
 "}\n"
 "")
-        icon9 = QIcon()
-        icon9.addFile(u":/icons/images/icons/cil-x-circle.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.closeOrderButton.setIcon(icon9)
+        icon16 = QIcon()
+        icon16.addFile(u":/icons/images/icons/cil-x-circle.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.closeOrderButton.setIcon(icon16)
         self.closeOrderButton.setIconSize(QSize(50, 50))
 
         self.horizontalLayout_5.addWidget(self.closeOrderButton)
@@ -1256,7 +1569,11 @@ class Ui_MainWindow(object):
         self.addLine_Frame_2.setObjectName(u"addLine_Frame_2")
         sizePolicy1.setHeightForWidth(self.addLine_Frame_2.sizePolicy().hasHeightForWidth())
         self.addLine_Frame_2.setSizePolicy(sizePolicy1)
-        self.addLine_Frame_2.setStyleSheet(u"QLineEdit{\n"
+        self.addLine_Frame_2.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"QLineEdit{\n"
 "	color: rgb(66, 66, 66);\n"
 "	selection-color: rgb(255, 0, 255);\n"
 "}\n"
@@ -1298,10 +1615,10 @@ class Ui_MainWindow(object):
 "}\n"
 "QTableWidget::item{\n"
 "	color: rgb(66, 66, 66);\n"
-"	border-color: rgb(36, 149, 255);\n"
+"	border-color:"
+                        " rgb(36, 149, 255);\n"
 "	padding-left: 25px;\n"
-"	padding-right: 5p"
-                        "x;\n"
+"	padding-right: 5px;\n"
 "	gridline-color: rgb(245, 246, 250);\n"
 "	text-align: center;\n"
 "}\n"
@@ -1408,18 +1725,18 @@ class Ui_MainWindow(object):
         font5 = QFont()
         font5.setPointSize(10)
         font5.setBold(True)
-        __qtablewidgetitem6 = QTableWidgetItem()
-        __qtablewidgetitem6.setFont(font5);
-        self.rollTable.setHorizontalHeaderItem(0, __qtablewidgetitem6)
         __qtablewidgetitem7 = QTableWidgetItem()
-        __qtablewidgetitem7.setFont(font2);
-        self.rollTable.setHorizontalHeaderItem(1, __qtablewidgetitem7)
+        __qtablewidgetitem7.setFont(font5);
+        self.rollTable.setHorizontalHeaderItem(0, __qtablewidgetitem7)
         __qtablewidgetitem8 = QTableWidgetItem()
         __qtablewidgetitem8.setFont(font2);
-        self.rollTable.setHorizontalHeaderItem(2, __qtablewidgetitem8)
+        self.rollTable.setHorizontalHeaderItem(1, __qtablewidgetitem8)
         __qtablewidgetitem9 = QTableWidgetItem()
         __qtablewidgetitem9.setFont(font2);
-        self.rollTable.setHorizontalHeaderItem(3, __qtablewidgetitem9)
+        self.rollTable.setHorizontalHeaderItem(2, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        __qtablewidgetitem10.setFont(font2);
+        self.rollTable.setHorizontalHeaderItem(3, __qtablewidgetitem10)
         self.rollTable.setObjectName(u"rollTable")
         self.rollTable.setEnabled(True)
         sizePolicy4.setHeightForWidth(self.rollTable.sizePolicy().hasHeightForWidth())
@@ -1553,24 +1870,20 @@ class Ui_MainWindow(object):
         self.horizontalLayout_19 = QHBoxLayout(self.frame_21)
         self.horizontalLayout_19.setSpacing(18)
         self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
-        self.startLineButton = QPushButton(self.frame_21)
-        self.startLineButton.setObjectName(u"startLineButton")
-        self.startLineButton.setMinimumSize(QSize(200, 150))
-        self.startLineButton.setMaximumSize(QSize(200, 150))
-        icon10 = QIcon()
-        icon10.addFile(u":/icons/images/icons/icons8-\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e-60.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.startLineButton.setIcon(icon10)
-        self.startLineButton.setIconSize(QSize(50, 50))
+        self.startCreateButton = QPushButton(self.frame_21)
+        self.startCreateButton.setObjectName(u"startCreateButton")
+        self.startCreateButton.setMinimumSize(QSize(200, 150))
+        self.startCreateButton.setMaximumSize(QSize(200, 150))
+        self.startCreateButton.setIcon(icon10)
+        self.startCreateButton.setIconSize(QSize(50, 50))
 
-        self.horizontalLayout_19.addWidget(self.startLineButton)
+        self.horizontalLayout_19.addWidget(self.startCreateButton)
 
         self.startOrdersButton = QPushButton(self.frame_21)
         self.startOrdersButton.setObjectName(u"startOrdersButton")
         self.startOrdersButton.setMinimumSize(QSize(200, 150))
         self.startOrdersButton.setMaximumSize(QSize(200, 150))
-        icon11 = QIcon()
-        icon11.addFile(u":/icons/images/icons/icons8-\u0441\u043f\u0438\u0441\u043e\u043a-\u0434\u0435\u043b-60.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.startOrdersButton.setIcon(icon11)
+        self.startOrdersButton.setIcon(icon2)
         self.startOrdersButton.setIconSize(QSize(50, 50))
 
         self.horizontalLayout_19.addWidget(self.startOrdersButton)
@@ -1590,27 +1903,25 @@ class Ui_MainWindow(object):
         self.horizontalLayout_21 = QHBoxLayout(self.frame_22)
         self.horizontalLayout_21.setSpacing(18)
         self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
+        self.startLineButton = QPushButton(self.frame_22)
+        self.startLineButton.setObjectName(u"startLineButton")
+        self.startLineButton.setMinimumSize(QSize(200, 150))
+        self.startLineButton.setMaximumSize(QSize(200, 150))
+        self.startLineButton.setIcon(icon3)
+        self.startLineButton.setIconSize(QSize(50, 50))
+
+        self.horizontalLayout_21.addWidget(self.startLineButton)
+
         self.startSearchButton = QPushButton(self.frame_22)
         self.startSearchButton.setObjectName(u"startSearchButton")
         self.startSearchButton.setMinimumSize(QSize(200, 150))
         self.startSearchButton.setMaximumSize(QSize(200, 150))
-        icon12 = QIcon()
-        icon12.addFile(u":/icons/images/icons/icons8-\u043f\u043e\u0438\u0441\u043a-60.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.startSearchButton.setIcon(icon12)
+        icon17 = QIcon()
+        icon17.addFile(u":/icons/images/icons/icons8-\u043f\u043e\u0438\u0441\u043a-60.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.startSearchButton.setIcon(icon17)
         self.startSearchButton.setIconSize(QSize(50, 50))
 
         self.horizontalLayout_21.addWidget(self.startSearchButton)
-
-        self.startSettingsButton = QPushButton(self.frame_22)
-        self.startSettingsButton.setObjectName(u"startSettingsButton")
-        self.startSettingsButton.setMinimumSize(QSize(200, 150))
-        self.startSettingsButton.setMaximumSize(QSize(200, 150))
-        icon13 = QIcon()
-        icon13.addFile(u":/icons/images/icons/icons8-\u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438-60.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.startSettingsButton.setIcon(icon13)
-        self.startSettingsButton.setIconSize(QSize(50, 50))
-
-        self.horizontalLayout_21.addWidget(self.startSettingsButton)
 
 
         self.verticalLayout_42.addWidget(self.frame_22)
@@ -1653,7 +1964,11 @@ class Ui_MainWindow(object):
         sizePolicy8.setHeightForWidth(self.activOrderList.sizePolicy().hasHeightForWidth())
         self.activOrderList.setSizePolicy(sizePolicy8)
         self.activOrderList.setMinimumSize(QSize(600, 0))
-        self.activOrderList.setStyleSheet(u"#activOrderList {\n"
+        self.activOrderList.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#activOrderList {\n"
 "background-color: rgb(255, 255, 255);\n"
 "border: none;\n"
 "border-radius: 20px;\n"
@@ -1693,11 +2008,11 @@ class Ui_MainWindow(object):
 "	color: rgb(66, 66, 66);\n"
 "	border-color: rgb(36, 149, 255);\n"
 "	padding-left: 25px;\n"
-"	padding-right: 5px;\n"
+"	padding-right: 5px;"
+                        "\n"
 "	gridline-color: rgb(245, 246, 250);\n"
 "	text-align: center;\n"
-""
-                        "}\n"
+"}\n"
 "QTableWidget::item:selected{\n"
 "	background-color: rgb(36, 149, 255);\n"
 "}\n"
@@ -1755,23 +2070,26 @@ class Ui_MainWindow(object):
         self.activOrder_Tab = QTableWidget(self.activOrderList)
         if (self.activOrder_Tab.columnCount() < 4):
             self.activOrder_Tab.setColumnCount(4)
-        __qtablewidgetitem10 = QTableWidgetItem()
-        __qtablewidgetitem10.setFont(font5);
-        self.activOrder_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem10)
         __qtablewidgetitem11 = QTableWidgetItem()
         __qtablewidgetitem11.setFont(font5);
-        self.activOrder_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem11)
+        self.activOrder_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem11)
         __qtablewidgetitem12 = QTableWidgetItem()
         __qtablewidgetitem12.setFont(font5);
-        self.activOrder_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem12)
+        self.activOrder_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem12)
         __qtablewidgetitem13 = QTableWidgetItem()
         __qtablewidgetitem13.setFont(font5);
-        self.activOrder_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem13)
+        self.activOrder_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem13)
+        __qtablewidgetitem14 = QTableWidgetItem()
+        __qtablewidgetitem14.setFont(font5);
+        self.activOrder_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem14)
         self.activOrder_Tab.setObjectName(u"activOrder_Tab")
         sizePolicy4.setHeightForWidth(self.activOrder_Tab.sizePolicy().hasHeightForWidth())
         self.activOrder_Tab.setSizePolicy(sizePolicy4)
-        self.activOrder_Tab.setMinimumSize(QSize(550, 0))
-        self.activOrder_Tab.setStyleSheet(u"horizontalHeader.resizeSection: (0, 500)")
+        self.activOrder_Tab.setMinimumSize(QSize(580, 0))
+        self.activOrder_Tab.setStyleSheet(u"QTableWidget::item:selected{\n"
+"	\n"
+"	background-color: rgb(217, 217, 217);\n"
+"}")
         self.activOrder_Tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.activOrder_Tab.setSelectionMode(QAbstractItemView.SingleSelection)
         self.activOrder_Tab.setSelectionBehavior(QAbstractItemView.SelectRows)
@@ -1785,7 +2103,14 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_20.addWidget(self.activOrder_Tab)
 
-        self.refreshBatch_button = QPushButton(self.activOrderList)
+        self.frame_87 = QFrame(self.activOrderList)
+        self.frame_87.setObjectName(u"frame_87")
+        self.frame_87.setMinimumSize(QSize(0, 50))
+        self.frame_87.setFrameShape(QFrame.StyledPanel)
+        self.frame_87.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_53 = QHBoxLayout(self.frame_87)
+        self.horizontalLayout_53.setObjectName(u"horizontalLayout_53")
+        self.refreshBatch_button = QPushButton(self.frame_87)
         self.refreshBatch_button.setObjectName(u"refreshBatch_button")
         sizePolicy6.setHeightForWidth(self.refreshBatch_button.sizePolicy().hasHeightForWidth())
         self.refreshBatch_button.setSizePolicy(sizePolicy6)
@@ -1793,7 +2118,34 @@ class Ui_MainWindow(object):
         self.refreshBatch_button.setMaximumSize(QSize(200, 16777215))
         self.refreshBatch_button.setStyleSheet(u"")
 
-        self.verticalLayout_20.addWidget(self.refreshBatch_button, 0, Qt.AlignLeft)
+        self.horizontalLayout_53.addWidget(self.refreshBatch_button, 0, Qt.AlignLeft)
+
+        self.selectLoadBatchMode_frame = QFrame(self.frame_87)
+        self.selectLoadBatchMode_frame.setObjectName(u"selectLoadBatchMode_frame")
+        self.selectLoadBatchMode_frame.setStyleSheet(u"")
+        self.selectLoadBatchMode_frame.setFrameShape(QFrame.StyledPanel)
+        self.selectLoadBatchMode_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_89 = QVBoxLayout(self.selectLoadBatchMode_frame)
+        self.verticalLayout_89.setObjectName(u"verticalLayout_89")
+        self.printHouse_checkBox = QCheckBox(self.selectLoadBatchMode_frame)
+        self.printHouse_checkBox.setObjectName(u"printHouse_checkBox")
+        self.printHouse_checkBox.setEnabled(True)
+        self.printHouse_checkBox.setChecked(True)
+        self.printHouse_checkBox.setTristate(False)
+
+        self.verticalLayout_89.addWidget(self.printHouse_checkBox)
+
+        self.mabufacture_checkBox = QCheckBox(self.selectLoadBatchMode_frame)
+        self.mabufacture_checkBox.setObjectName(u"mabufacture_checkBox")
+        self.mabufacture_checkBox.setChecked(True)
+
+        self.verticalLayout_89.addWidget(self.mabufacture_checkBox)
+
+
+        self.horizontalLayout_53.addWidget(self.selectLoadBatchMode_frame, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_20.addWidget(self.frame_87)
 
 
         self.horizontalLayout_6.addWidget(self.activOrderList)
@@ -1802,7 +2154,11 @@ class Ui_MainWindow(object):
         self.orderFrame.setObjectName(u"orderFrame")
         sizePolicy1.setHeightForWidth(self.orderFrame.sizePolicy().hasHeightForWidth())
         self.orderFrame.setSizePolicy(sizePolicy1)
-        self.orderFrame.setStyleSheet(u"#orderFrame {\n"
+        self.orderFrame.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"#orderFrame {\n"
 "	background-color: rgb(255, 255, 255);\n"
 "	border: none;\n"
 "	border-radius: 20px;	\n"
@@ -1831,18 +2187,18 @@ class Ui_MainWindow(object):
 "\n"
 "QHeaderView::section{\n"
 "	color: rgb(66, 66, 66);\n"
-"	background-color: rgb(36, 149, 255);\n"
+"	background-color: rgb(255, 255, 255);\n"
 "	max-width: 30px;\n"
 "	border: 1px solid rgb(44, 49, 58);\n"
 "	border-style: none;\n"
 "    border-bottom: 1px solid rgb(44, 49, 60);\n"
 "    border-right: 1px solid rgb(44, 49, 60);\n"
 "}\n"
-"QTableWidget::horizontalHeader {	\n"
+"QTableWidget::horizontalHe"
+                        "ader {	\n"
 "	background-color: rgb(33, 37, 43);\n"
 "}\n"
-"QHeaderVie"
-                        "w::section:horizontal {\n"
+"QHeaderView::section:horizontal {\n"
 "    border: 1px solid rgb(36, 149, 255);\n"
 "	background-color: rgb(36, 149, 255);\n"
 "	padding: 3px;\n"
@@ -1854,7 +2210,87 @@ class Ui_MainWindow(object):
 "}/*\n"
 "QHeaderView::section:vertical {\n"
 "    border: 1px solid rgb(44, 49, 60);\n"
-"}*/")
+"}*/\n"
+"\n"
+"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"ScrollBars */\n"
+"QScrollBar:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(255, 255, 255);\n"
+"    height: 8px;\n"
+"    margin: 0px 21px 0 21px;\n"
+"	border-radius: 0px;\n"
+"}\n"
+"QScrollBar::handle:horizontal {\n"
+"    background: rgb(36, 149, 255);\n"
+"    min-width: 25px;\n"
+"	border-radius: 4px\n"
+"}\n"
+"QScrollBar::add-line:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"    width: 20px;\n"
+"	border-top-right-rad"
+                        "ius: 4px;\n"
+"    border-bottom-right-radius: 4px;\n"
+"    subcontrol-position: right;\n"
+"    subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:horizontal {\n"
+"    border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"    width: 20px;\n"
+"	border-top-left-radius: 4px;\n"
+"    border-bottom-left-radius: 4px;\n"
+"    subcontrol-position: left;\n"
+"    subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal\n"
+"{\n"
+"     background: none;\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal\n"
+"{\n"
+"     background: none;\n"
+"}\n"
+" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(255, 255, 255);\n"
+"    width: 8px;\n"
+"    margin: 21px 0 21px 0;\n"
+"	border-radius: 0px;\n"
+" }\n"
+" QScrollBar::handle:vertical {	\n"
+"	background: rgb(36, 149, 255);\n"
+"    min-height: 25px;\n"
+"	border-radius: 4px\n"
+" }\n"
+" QScrollBar::add-line:vertical {\n"
+"     border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"     height:"
+                        " 20px;\n"
+"	border-bottom-left-radius: 4px;\n"
+"    border-bottom-right-radius: 4px;\n"
+"     subcontrol-position: bottom;\n"
+"     subcontrol-origin: margin;\n"
+" }\n"
+" QScrollBar::sub-line:vertical {\n"
+"	border: none;\n"
+"    background: rgb(55, 63, 77);\n"
+"     height: 20px;\n"
+"	border-top-left-radius: 4px;\n"
+"    border-top-right-radius: 4px;\n"
+"     subcontrol-position: top;\n"
+"     subcontrol-origin: margin;\n"
+" }\n"
+" QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"     background: none;\n"
+" }\n"
+"\n"
+" QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"     background: none;\n"
+" }")
         self.orderFrame.setFrameShape(QFrame.StyledPanel)
         self.orderFrame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_21 = QVBoxLayout(self.orderFrame)
@@ -1873,72 +2309,72 @@ class Ui_MainWindow(object):
         self.batchData_Tab = QTableWidget(self.frame_9)
         if (self.batchData_Tab.columnCount() < 10):
             self.batchData_Tab.setColumnCount(10)
-        __qtablewidgetitem14 = QTableWidgetItem()
-        __qtablewidgetitem14.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem14)
         __qtablewidgetitem15 = QTableWidgetItem()
         __qtablewidgetitem15.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem15)
+        self.batchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem15)
         __qtablewidgetitem16 = QTableWidgetItem()
         __qtablewidgetitem16.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem16)
+        self.batchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem16)
         __qtablewidgetitem17 = QTableWidgetItem()
         __qtablewidgetitem17.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem17)
+        self.batchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem17)
         __qtablewidgetitem18 = QTableWidgetItem()
         __qtablewidgetitem18.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(4, __qtablewidgetitem18)
+        self.batchData_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem18)
         __qtablewidgetitem19 = QTableWidgetItem()
         __qtablewidgetitem19.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(5, __qtablewidgetitem19)
+        self.batchData_Tab.setHorizontalHeaderItem(4, __qtablewidgetitem19)
         __qtablewidgetitem20 = QTableWidgetItem()
         __qtablewidgetitem20.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(6, __qtablewidgetitem20)
+        self.batchData_Tab.setHorizontalHeaderItem(5, __qtablewidgetitem20)
         __qtablewidgetitem21 = QTableWidgetItem()
         __qtablewidgetitem21.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(7, __qtablewidgetitem21)
+        self.batchData_Tab.setHorizontalHeaderItem(6, __qtablewidgetitem21)
         __qtablewidgetitem22 = QTableWidgetItem()
         __qtablewidgetitem22.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(8, __qtablewidgetitem22)
+        self.batchData_Tab.setHorizontalHeaderItem(7, __qtablewidgetitem22)
         __qtablewidgetitem23 = QTableWidgetItem()
         __qtablewidgetitem23.setFont(font5);
-        self.batchData_Tab.setHorizontalHeaderItem(9, __qtablewidgetitem23)
+        self.batchData_Tab.setHorizontalHeaderItem(8, __qtablewidgetitem23)
+        __qtablewidgetitem24 = QTableWidgetItem()
+        __qtablewidgetitem24.setFont(font5);
+        self.batchData_Tab.setHorizontalHeaderItem(9, __qtablewidgetitem24)
         if (self.batchData_Tab.rowCount() < 1):
             self.batchData_Tab.setRowCount(1)
-        __qtablewidgetitem24 = QTableWidgetItem()
-        __qtablewidgetitem24.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 0, __qtablewidgetitem24)
-        font6 = QFont()
-        font6.setPointSize(10)
         __qtablewidgetitem25 = QTableWidgetItem()
         __qtablewidgetitem25.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem25.setFont(font6);
-        self.batchData_Tab.setItem(0, 1, __qtablewidgetitem25)
+        self.batchData_Tab.setItem(0, 0, __qtablewidgetitem25)
+        font6 = QFont()
+        font6.setPointSize(10)
         __qtablewidgetitem26 = QTableWidgetItem()
         __qtablewidgetitem26.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 2, __qtablewidgetitem26)
+        __qtablewidgetitem26.setFont(font6);
+        self.batchData_Tab.setItem(0, 1, __qtablewidgetitem26)
         __qtablewidgetitem27 = QTableWidgetItem()
         __qtablewidgetitem27.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 3, __qtablewidgetitem27)
+        self.batchData_Tab.setItem(0, 2, __qtablewidgetitem27)
         __qtablewidgetitem28 = QTableWidgetItem()
         __qtablewidgetitem28.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 4, __qtablewidgetitem28)
+        self.batchData_Tab.setItem(0, 3, __qtablewidgetitem28)
         __qtablewidgetitem29 = QTableWidgetItem()
         __qtablewidgetitem29.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 5, __qtablewidgetitem29)
+        self.batchData_Tab.setItem(0, 4, __qtablewidgetitem29)
         __qtablewidgetitem30 = QTableWidgetItem()
         __qtablewidgetitem30.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 6, __qtablewidgetitem30)
+        self.batchData_Tab.setItem(0, 5, __qtablewidgetitem30)
         __qtablewidgetitem31 = QTableWidgetItem()
         __qtablewidgetitem31.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem31.setFont(font6);
-        self.batchData_Tab.setItem(0, 7, __qtablewidgetitem31)
+        self.batchData_Tab.setItem(0, 6, __qtablewidgetitem31)
         __qtablewidgetitem32 = QTableWidgetItem()
         __qtablewidgetitem32.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 8, __qtablewidgetitem32)
+        __qtablewidgetitem32.setFont(font6);
+        self.batchData_Tab.setItem(0, 7, __qtablewidgetitem32)
         __qtablewidgetitem33 = QTableWidgetItem()
         __qtablewidgetitem33.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab.setItem(0, 9, __qtablewidgetitem33)
+        self.batchData_Tab.setItem(0, 8, __qtablewidgetitem33)
+        __qtablewidgetitem34 = QTableWidgetItem()
+        __qtablewidgetitem34.setTextAlignment(Qt.AlignCenter);
+        self.batchData_Tab.setItem(0, 9, __qtablewidgetitem34)
         self.batchData_Tab.setObjectName(u"batchData_Tab")
         sizePolicy1.setHeightForWidth(self.batchData_Tab.sizePolicy().hasHeightForWidth())
         self.batchData_Tab.setSizePolicy(sizePolicy1)
@@ -2107,23 +2543,81 @@ class Ui_MainWindow(object):
         self.KITUContainer.setObjectName(u"KITUContainer")
         sizePolicy3.setHeightForWidth(self.KITUContainer.sizePolicy().hasHeightForWidth())
         self.KITUContainer.setSizePolicy(sizePolicy3)
+        self.KITUContainer.setMinimumSize(QSize(0, 0))
         self.KITUContainer.setMaximumSize(QSize(16777215, 0))
+        self.KITUContainer.setStyleSheet(u"#KITUContainer {\n"
+"	border: 1px solid;\n"
+"	border-color: rgb(36, 149, 255);\n"
+"	border-radius: 20px;\n"
+"\n"
+"	\n"
+"	\n"
+"	\n"
+"	border-color: qradialgradient(spread:pad, cx:0.619, cy:0.341, radius:0.5, fx:0.909091, fy:0.085, stop:0.346591 rgba(36, 149, 255, 206), stop:0.35 rgba(255, 188, 188, 80), stop:0.4 rgba(255, 162, 162, 80), stop:0.494318 rgba(36, 149, 255, 80), stop:0.6875 rgba(36, 149, 255, 156), stop:1 rgba(255, 255, 255, 0));\n"
+"}\n"
+"")
         self.KITUContainer.setFrameShape(QFrame.StyledPanel)
         self.KITUContainer.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_22 = QHBoxLayout(self.KITUContainer)
+        self.verticalLayout_104 = QVBoxLayout(self.KITUContainer)
+        self.verticalLayout_104.setSpacing(0)
+        self.verticalLayout_104.setObjectName(u"verticalLayout_104")
+        self.verticalLayout_104.setContentsMargins(0, 0, 0, 0)
+        self.frame_105 = QFrame(self.KITUContainer)
+        self.frame_105.setObjectName(u"frame_105")
+        self.frame_105.setStyleSheet(u"QPushButton {\n"
+"	font: 10pt \"Segoe UI\";\n"
+"	background-position:center;\n"
+"    background-repeat: no-repeat;\n"
+"	border: none;\n"
+"	border-radius: 20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	text-align: center;\n"
+"	padding-left: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 66, 66);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+        self.frame_105.setFrameShape(QFrame.StyledPanel)
+        self.frame_105.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_59 = QHBoxLayout(self.frame_105)
+        self.horizontalLayout_59.setObjectName(u"horizontalLayout_59")
+        self.KITUsendPrint_button = QPushButton(self.frame_105)
+        self.KITUsendPrint_button.setObjectName(u"KITUsendPrint_button")
+        sizePolicy6.setHeightForWidth(self.KITUsendPrint_button.sizePolicy().hasHeightForWidth())
+        self.KITUsendPrint_button.setSizePolicy(sizePolicy6)
+        self.KITUsendPrint_button.setMinimumSize(QSize(200, 50))
+        self.KITUsendPrint_button.setMaximumSize(QSize(200, 16777215))
+        self.KITUsendPrint_button.setStyleSheet(u"")
+
+        self.horizontalLayout_59.addWidget(self.KITUsendPrint_button)
+
+
+        self.verticalLayout_104.addWidget(self.frame_105, 0, Qt.AlignLeft)
+
+        self.frame_104 = QFrame(self.KITUContainer)
+        self.frame_104.setObjectName(u"frame_104")
+        self.frame_104.setFrameShape(QFrame.StyledPanel)
+        self.frame_104.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_22 = QHBoxLayout(self.frame_104)
         self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
-        self.orderKITU_tab = QTableWidget(self.KITUContainer)
+        self.orderKITU_tab = QTableWidget(self.frame_104)
         if (self.orderKITU_tab.columnCount() < 3):
             self.orderKITU_tab.setColumnCount(3)
-        __qtablewidgetitem34 = QTableWidgetItem()
-        __qtablewidgetitem34.setFont(font5);
-        self.orderKITU_tab.setHorizontalHeaderItem(0, __qtablewidgetitem34)
         __qtablewidgetitem35 = QTableWidgetItem()
         __qtablewidgetitem35.setFont(font5);
-        self.orderKITU_tab.setHorizontalHeaderItem(1, __qtablewidgetitem35)
+        self.orderKITU_tab.setHorizontalHeaderItem(0, __qtablewidgetitem35)
         __qtablewidgetitem36 = QTableWidgetItem()
         __qtablewidgetitem36.setFont(font5);
-        self.orderKITU_tab.setHorizontalHeaderItem(2, __qtablewidgetitem36)
+        self.orderKITU_tab.setHorizontalHeaderItem(1, __qtablewidgetitem36)
+        __qtablewidgetitem37 = QTableWidgetItem()
+        __qtablewidgetitem37.setFont(font5);
+        self.orderKITU_tab.setHorizontalHeaderItem(2, __qtablewidgetitem37)
         self.orderKITU_tab.setObjectName(u"orderKITU_tab")
         self.orderKITU_tab.setMinimumSize(QSize(550, 0))
         self.orderKITU_tab.setMaximumSize(QSize(16777215, 16777215))
@@ -2133,9 +2627,9 @@ class Ui_MainWindow(object):
         self.orderKITU_tab.horizontalHeader().setStretchLastSection(False)
         self.orderKITU_tab.verticalHeader().setVisible(False)
 
-        self.horizontalLayout_22.addWidget(self.orderKITU_tab, 0, Qt.AlignLeft)
+        self.horizontalLayout_22.addWidget(self.orderKITU_tab)
 
-        self.KI_from_KITU_Container = QFrame(self.KITUContainer)
+        self.KI_from_KITU_Container = QFrame(self.frame_104)
         self.KI_from_KITU_Container.setObjectName(u"KI_from_KITU_Container")
         sizePolicy1.setHeightForWidth(self.KI_from_KITU_Container.sizePolicy().hasHeightForWidth())
         self.KI_from_KITU_Container.setSizePolicy(sizePolicy1)
@@ -2151,15 +2645,15 @@ class Ui_MainWindow(object):
         self.ki_from_KITU_tab = QTableWidget(self.KI_from_KITU_Container)
         if (self.ki_from_KITU_tab.columnCount() < 3):
             self.ki_from_KITU_tab.setColumnCount(3)
-        __qtablewidgetitem37 = QTableWidgetItem()
-        __qtablewidgetitem37.setFont(font5);
-        self.ki_from_KITU_tab.setHorizontalHeaderItem(0, __qtablewidgetitem37)
         __qtablewidgetitem38 = QTableWidgetItem()
         __qtablewidgetitem38.setFont(font5);
-        self.ki_from_KITU_tab.setHorizontalHeaderItem(1, __qtablewidgetitem38)
+        self.ki_from_KITU_tab.setHorizontalHeaderItem(0, __qtablewidgetitem38)
         __qtablewidgetitem39 = QTableWidgetItem()
         __qtablewidgetitem39.setFont(font5);
-        self.ki_from_KITU_tab.setHorizontalHeaderItem(2, __qtablewidgetitem39)
+        self.ki_from_KITU_tab.setHorizontalHeaderItem(1, __qtablewidgetitem39)
+        __qtablewidgetitem40 = QTableWidgetItem()
+        __qtablewidgetitem40.setFont(font5);
+        self.ki_from_KITU_tab.setHorizontalHeaderItem(2, __qtablewidgetitem40)
         self.ki_from_KITU_tab.setObjectName(u"ki_from_KITU_tab")
         self.ki_from_KITU_tab.setMaximumSize(QSize(600, 16777215))
         self.ki_from_KITU_tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
@@ -2173,9 +2667,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_22.addWidget(self.KI_from_KITU_Container)
 
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer = QSpacerItem(139, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_22.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_104.addWidget(self.frame_104)
 
 
         self.verticalLayout_27.addWidget(self.KITUContainer)
@@ -2212,15 +2709,15 @@ class Ui_MainWindow(object):
         self.sendLine_tab = QTableWidget(self.sendLineContainer)
         if (self.sendLine_tab.columnCount() < 3):
             self.sendLine_tab.setColumnCount(3)
-        __qtablewidgetitem40 = QTableWidgetItem()
-        __qtablewidgetitem40.setFont(font5);
-        self.sendLine_tab.setHorizontalHeaderItem(0, __qtablewidgetitem40)
         __qtablewidgetitem41 = QTableWidgetItem()
         __qtablewidgetitem41.setFont(font5);
-        self.sendLine_tab.setHorizontalHeaderItem(1, __qtablewidgetitem41)
+        self.sendLine_tab.setHorizontalHeaderItem(0, __qtablewidgetitem41)
         __qtablewidgetitem42 = QTableWidgetItem()
         __qtablewidgetitem42.setFont(font5);
-        self.sendLine_tab.setHorizontalHeaderItem(2, __qtablewidgetitem42)
+        self.sendLine_tab.setHorizontalHeaderItem(1, __qtablewidgetitem42)
+        __qtablewidgetitem43 = QTableWidgetItem()
+        __qtablewidgetitem43.setFont(font5);
+        self.sendLine_tab.setHorizontalHeaderItem(2, __qtablewidgetitem43)
         self.sendLine_tab.setObjectName(u"sendLine_tab")
         sizePolicy3.setHeightForWidth(self.sendLine_tab.sizePolicy().hasHeightForWidth())
         self.sendLine_tab.setSizePolicy(sizePolicy3)
@@ -2263,10 +2760,11 @@ class Ui_MainWindow(object):
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
 "	border-radius: 20px;\n"
-"	background-color: transparent;\n"
+"	\n"
+"	background-color: rgb(119, 119, 119);\n"
 "	text-align: center;\n"
 "	padding-left: 5px;\n"
-"	color: rgb(193, 193, 193);\n"
+"	color: rgb(255, 255, 255);\n"
 "}")
 
         self.verticalLayout_28.addWidget(self.sendOrder_btn)
@@ -2298,32 +2796,36 @@ class Ui_MainWindow(object):
         self.orderKM_tab = QTableWidget(self.codeContainer)
         if (self.orderKM_tab.columnCount() < 8):
             self.orderKM_tab.setColumnCount(8)
-        __qtablewidgetitem43 = QTableWidgetItem()
-        __qtablewidgetitem43.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(0, __qtablewidgetitem43)
         __qtablewidgetitem44 = QTableWidgetItem()
         __qtablewidgetitem44.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(1, __qtablewidgetitem44)
+        self.orderKM_tab.setHorizontalHeaderItem(0, __qtablewidgetitem44)
         __qtablewidgetitem45 = QTableWidgetItem()
         __qtablewidgetitem45.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(2, __qtablewidgetitem45)
+        self.orderKM_tab.setHorizontalHeaderItem(1, __qtablewidgetitem45)
         __qtablewidgetitem46 = QTableWidgetItem()
         __qtablewidgetitem46.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(3, __qtablewidgetitem46)
+        self.orderKM_tab.setHorizontalHeaderItem(2, __qtablewidgetitem46)
         __qtablewidgetitem47 = QTableWidgetItem()
         __qtablewidgetitem47.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(4, __qtablewidgetitem47)
+        self.orderKM_tab.setHorizontalHeaderItem(3, __qtablewidgetitem47)
         __qtablewidgetitem48 = QTableWidgetItem()
         __qtablewidgetitem48.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(5, __qtablewidgetitem48)
+        self.orderKM_tab.setHorizontalHeaderItem(4, __qtablewidgetitem48)
         __qtablewidgetitem49 = QTableWidgetItem()
         __qtablewidgetitem49.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(6, __qtablewidgetitem49)
+        self.orderKM_tab.setHorizontalHeaderItem(5, __qtablewidgetitem49)
         __qtablewidgetitem50 = QTableWidgetItem()
         __qtablewidgetitem50.setFont(font5);
-        self.orderKM_tab.setHorizontalHeaderItem(7, __qtablewidgetitem50)
+        self.orderKM_tab.setHorizontalHeaderItem(6, __qtablewidgetitem50)
+        __qtablewidgetitem51 = QTableWidgetItem()
+        __qtablewidgetitem51.setFont(font5);
+        self.orderKM_tab.setHorizontalHeaderItem(7, __qtablewidgetitem51)
         self.orderKM_tab.setObjectName(u"orderKM_tab")
         self.orderKM_tab.setMaximumSize(QSize(16777215, 16777215))
+        self.orderKM_tab.setStyleSheet(u"QTableWidget::item:selected{\n"
+"	\n"
+"	background-color: rgb(217, 217, 217);\n"
+"}")
         self.orderKM_tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.orderKM_tab.horizontalHeader().setDefaultSectionSize(130)
         self.orderKM_tab.horizontalHeader().setStretchLastSection(False)
@@ -2344,6 +2846,196 @@ class Ui_MainWindow(object):
         self.verticalLayout_19.addWidget(self.frame_8)
 
         self.stackedWidget.addWidget(self.ordersPage)
+        self.createOrderPage = QWidget()
+        self.createOrderPage.setObjectName(u"createOrderPage")
+        self.verticalLayout_92 = QVBoxLayout(self.createOrderPage)
+        self.verticalLayout_92.setObjectName(u"verticalLayout_92")
+        self.createFrame = QFrame(self.createOrderPage)
+        self.createFrame.setObjectName(u"createFrame")
+        sizePolicy2.setHeightForWidth(self.createFrame.sizePolicy().hasHeightForWidth())
+        self.createFrame.setSizePolicy(sizePolicy2)
+        self.createFrame.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
+"ComboBox */\n"
+"QComboBox{\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	border-radius: 5px;\n"
+"	border: 1px solid rgb(0, 0, 0);\n"
+"	padding: 5px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"QComboBox:hover{\n"
+"	border: 2px solid rgb(64, 71, 88);\n"
+"}\n"
+"QComboBox::drop-down {\n"
+"	subcontrol-origin: padding;\n"
+"	subcontrol-position: top right;\n"
+"	width: 25px; \n"
+"	border-left-width: 3px;\n"
+"	border-left-color: rgba(39, 44, 54, 150);\n"
+"	border-left-style: solid;\n"
+"	border-top-right-radius: 3px;\n"
+"	border-bottom-right-radius: 3px;	\n"
+"	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);\n"
+"	background-position: center;\n"
+"	background-repeat: no-reperat;\n"
+"	background-color: rgb(36, 149, 255);\n"
+" }\n"
+"QComboBox QAbstractItemView {\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rg"
+                        "b(245, 246, 250);\n"
+"	padding: 10px;\n"
+"	selection-background-color: rgb(36, 149, 255);\n"
+"}")
+        self.createFrame.setFrameShape(QFrame.StyledPanel)
+        self.createFrame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_90 = QVBoxLayout(self.createFrame)
+        self.verticalLayout_90.setObjectName(u"verticalLayout_90")
+        self.frame_89 = QFrame(self.createFrame)
+        self.frame_89.setObjectName(u"frame_89")
+        self.frame_89.setStyleSheet(u"color: rgb(66, 66, 66);\n"
+"	font: 20pt \"Segoe UI\";")
+        self.frame_89.setFrameShape(QFrame.StyledPanel)
+        self.frame_89.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_91 = QVBoxLayout(self.frame_89)
+        self.verticalLayout_91.setSpacing(0)
+        self.verticalLayout_91.setObjectName(u"verticalLayout_91")
+        self.verticalLayout_91.setContentsMargins(10, 0, 0, 0)
+        self.label_16 = QLabel(self.frame_89)
+        self.label_16.setObjectName(u"label_16")
+
+        self.verticalLayout_91.addWidget(self.label_16, 0, Qt.AlignTop)
+
+
+        self.verticalLayout_90.addWidget(self.frame_89, 0, Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.frame_90 = QFrame(self.createFrame)
+        self.frame_90.setObjectName(u"frame_90")
+        self.frame_90.setFrameShape(QFrame.StyledPanel)
+        self.frame_90.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_93 = QVBoxLayout(self.frame_90)
+        self.verticalLayout_93.setObjectName(u"verticalLayout_93")
+        self.frame_92 = QFrame(self.frame_90)
+        self.frame_92.setObjectName(u"frame_92")
+        self.frame_92.setMinimumSize(QSize(0, 50))
+        self.frame_92.setFrameShape(QFrame.StyledPanel)
+        self.frame_92.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_54 = QHBoxLayout(self.frame_92)
+        self.horizontalLayout_54.setObjectName(u"horizontalLayout_54")
+        self.numCreatedOrder_edit = QLineEdit(self.frame_92)
+        self.numCreatedOrder_edit.setObjectName(u"numCreatedOrder_edit")
+        self.numCreatedOrder_edit.setMinimumSize(QSize(0, 30))
+        self.numCreatedOrder_edit.setMaximumSize(QSize(300, 16777215))
+        self.numCreatedOrder_edit.setStyleSheet(u"font: 700 10pt \"Segoe UI\";\n"
+"	color: rgb(66, 66, 66);")
+
+        self.horizontalLayout_54.addWidget(self.numCreatedOrder_edit)
+
+        self.comboBox = QComboBox(self.frame_92)
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setMinimumSize(QSize(300, 0))
+        self.comboBox.setMaximumSize(QSize(16777215, 30))
+        self.comboBox.setStyleSheet(u"font: 700 10pt \"Segoe UI\";")
+        self.comboBox.setMaxVisibleItems(20)
+
+        self.horizontalLayout_54.addWidget(self.comboBox)
+
+        self.createOrderBtn = QPushButton(self.frame_92)
+        self.createOrderBtn.setObjectName(u"createOrderBtn")
+        self.createOrderBtn.setEnabled(False)
+        self.createOrderBtn.setMinimumSize(QSize(150, 40))
+        self.createOrderBtn.setMaximumSize(QSize(150, 16777215))
+        self.createOrderBtn.setStyleSheet(u"background-color: rgb(119, 119, 119);")
+
+        self.horizontalLayout_54.addWidget(self.createOrderBtn)
+
+
+        self.verticalLayout_93.addWidget(self.frame_92)
+
+
+        self.verticalLayout_90.addWidget(self.frame_90)
+
+
+        self.verticalLayout_92.addWidget(self.createFrame, 0, Qt.AlignTop)
+
+        self.frame_91 = QFrame(self.createOrderPage)
+        self.frame_91.setObjectName(u"frame_91")
+        sizePolicy.setHeightForWidth(self.frame_91.sizePolicy().hasHeightForWidth())
+        self.frame_91.setSizePolicy(sizePolicy)
+        self.frame_91.setMinimumSize(QSize(0, 300))
+        self.frame_91.setStyleSheet(u"QFrame {\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+        self.frame_91.setFrameShape(QFrame.StyledPanel)
+        self.frame_91.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_95 = QVBoxLayout(self.frame_91)
+        self.verticalLayout_95.setObjectName(u"verticalLayout_95")
+        self.frame_93 = QFrame(self.frame_91)
+        self.frame_93.setObjectName(u"frame_93")
+        self.frame_93.setStyleSheet(u"color: rgb(66, 66, 66);\n"
+"	font: 20pt \"Segoe UI\";")
+        self.frame_93.setFrameShape(QFrame.StyledPanel)
+        self.frame_93.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_94 = QVBoxLayout(self.frame_93)
+        self.verticalLayout_94.setSpacing(0)
+        self.verticalLayout_94.setObjectName(u"verticalLayout_94")
+        self.verticalLayout_94.setContentsMargins(10, 0, 0, 0)
+        self.label_17 = QLabel(self.frame_93)
+        self.label_17.setObjectName(u"label_17")
+
+        self.verticalLayout_94.addWidget(self.label_17, 0, Qt.AlignTop)
+
+
+        self.verticalLayout_95.addWidget(self.frame_93)
+
+        self.lastOrder_Tab = QTableWidget(self.frame_91)
+        if (self.lastOrder_Tab.columnCount() < 5):
+            self.lastOrder_Tab.setColumnCount(5)
+        __qtablewidgetitem52 = QTableWidgetItem()
+        __qtablewidgetitem52.setFont(font5);
+        self.lastOrder_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem52)
+        __qtablewidgetitem53 = QTableWidgetItem()
+        __qtablewidgetitem53.setFont(font5);
+        self.lastOrder_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem53)
+        __qtablewidgetitem54 = QTableWidgetItem()
+        __qtablewidgetitem54.setFont(font5);
+        self.lastOrder_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem54)
+        __qtablewidgetitem55 = QTableWidgetItem()
+        __qtablewidgetitem55.setFont(font5);
+        self.lastOrder_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem55)
+        __qtablewidgetitem56 = QTableWidgetItem()
+        __qtablewidgetitem56.setFont(font5);
+        self.lastOrder_Tab.setHorizontalHeaderItem(4, __qtablewidgetitem56)
+        self.lastOrder_Tab.setObjectName(u"lastOrder_Tab")
+        sizePolicy3.setHeightForWidth(self.lastOrder_Tab.sizePolicy().hasHeightForWidth())
+        self.lastOrder_Tab.setSizePolicy(sizePolicy3)
+        self.lastOrder_Tab.setMinimumSize(QSize(0, 0))
+        self.lastOrder_Tab.setStyleSheet(u"QTableWidget::item:selected{\n"
+"	\n"
+"	background-color: rgb(217, 217, 217);\n"
+"}")
+        self.lastOrder_Tab.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.lastOrder_Tab.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.lastOrder_Tab.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.lastOrder_Tab.setTextElideMode(Qt.ElideLeft)
+        self.lastOrder_Tab.setSortingEnabled(False)
+        self.lastOrder_Tab.setRowCount(0)
+        self.lastOrder_Tab.horizontalHeader().setHighlightSections(True)
+        self.lastOrder_Tab.horizontalHeader().setProperty("showSortIndicator", False)
+        self.lastOrder_Tab.verticalHeader().setVisible(False)
+        self.lastOrder_Tab.verticalHeader().setProperty("showSortIndicator", False)
+
+        self.verticalLayout_95.addWidget(self.lastOrder_Tab)
+
+
+        self.verticalLayout_92.addWidget(self.frame_91)
+
+        self.stackedWidget.addWidget(self.createOrderPage)
         self.printPage = QWidget()
         self.printPage.setObjectName(u"printPage")
         self.verticalLayout_49 = QVBoxLayout(self.printPage)
@@ -2455,23 +3147,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_50.setContentsMargins(9, -1, 9, -1)
         self.frame_41 = QFrame(self.frame_31)
         self.frame_41.setObjectName(u"frame_41")
-        self.frame_41.setFrameShape(QFrame.StyledPanel)
-        self.frame_41.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_63 = QVBoxLayout(self.frame_41)
-        self.verticalLayout_63.setObjectName(u"verticalLayout_63")
-        self.startPrint_btn = QPushButton(self.frame_41)
-        self.startPrint_btn.setObjectName(u"startPrint_btn")
-        self.startPrint_btn.setEnabled(False)
-        self.startPrint_btn.setMinimumSize(QSize(40, 40))
-        self.startPrint_btn.setMaximumSize(QSize(200, 16777215))
-        self.startPrint_btn.setStyleSheet(u"QPushButton {\n"
+        self.frame_41.setStyleSheet(u"QPushButton {\n"
 "	font: 10pt \"Segoe UI\";\n"
 "	background-position:center;\n"
 "    background-repeat: no-repeat;\n"
 "	border: none;\n"
 "	border-radius: 20px;\n"
 "	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(36, 149, 255);\n"
+"	background-color: rgb(119, 119, 119);\n"
 "	text-align: center;\n"
 "	padding-left: 5px;\n"
 "}\n"
@@ -2483,6 +3166,16 @@ class Ui_MainWindow(object):
 "	background-color: rgb(245, 246, 250);\n"
 "	color: rgb(0, 0, 0);\n"
 "}")
+        self.frame_41.setFrameShape(QFrame.StyledPanel)
+        self.frame_41.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_63 = QVBoxLayout(self.frame_41)
+        self.verticalLayout_63.setObjectName(u"verticalLayout_63")
+        self.startPrint_btn = QPushButton(self.frame_41)
+        self.startPrint_btn.setObjectName(u"startPrint_btn")
+        self.startPrint_btn.setEnabled(False)
+        self.startPrint_btn.setMinimumSize(QSize(40, 40))
+        self.startPrint_btn.setMaximumSize(QSize(200, 16777215))
+        self.startPrint_btn.setStyleSheet(u"")
 
         self.verticalLayout_63.addWidget(self.startPrint_btn)
 
@@ -2576,15 +3269,15 @@ class Ui_MainWindow(object):
         self.kmPrint_tab = QTableWidget(self.frame_42)
         if (self.kmPrint_tab.columnCount() < 3):
             self.kmPrint_tab.setColumnCount(3)
-        __qtablewidgetitem51 = QTableWidgetItem()
-        __qtablewidgetitem51.setFont(font5);
-        self.kmPrint_tab.setHorizontalHeaderItem(0, __qtablewidgetitem51)
-        __qtablewidgetitem52 = QTableWidgetItem()
-        __qtablewidgetitem52.setFont(font5);
-        self.kmPrint_tab.setHorizontalHeaderItem(1, __qtablewidgetitem52)
-        __qtablewidgetitem53 = QTableWidgetItem()
-        __qtablewidgetitem53.setFont(font5);
-        self.kmPrint_tab.setHorizontalHeaderItem(2, __qtablewidgetitem53)
+        __qtablewidgetitem57 = QTableWidgetItem()
+        __qtablewidgetitem57.setFont(font5);
+        self.kmPrint_tab.setHorizontalHeaderItem(0, __qtablewidgetitem57)
+        __qtablewidgetitem58 = QTableWidgetItem()
+        __qtablewidgetitem58.setFont(font5);
+        self.kmPrint_tab.setHorizontalHeaderItem(1, __qtablewidgetitem58)
+        __qtablewidgetitem59 = QTableWidgetItem()
+        __qtablewidgetitem59.setFont(font5);
+        self.kmPrint_tab.setHorizontalHeaderItem(2, __qtablewidgetitem59)
         self.kmPrint_tab.setObjectName(u"kmPrint_tab")
         sizePolicy4.setHeightForWidth(self.kmPrint_tab.sizePolicy().hasHeightForWidth())
         self.kmPrint_tab.setSizePolicy(sizePolicy4)
@@ -2671,15 +3364,15 @@ class Ui_MainWindow(object):
         self.listPrinter_tab = QTableWidget(self.frame_66)
         if (self.listPrinter_tab.columnCount() < 3):
             self.listPrinter_tab.setColumnCount(3)
-        __qtablewidgetitem54 = QTableWidgetItem()
-        __qtablewidgetitem54.setFont(font2);
-        self.listPrinter_tab.setHorizontalHeaderItem(0, __qtablewidgetitem54)
-        __qtablewidgetitem55 = QTableWidgetItem()
-        __qtablewidgetitem55.setFont(font2);
-        self.listPrinter_tab.setHorizontalHeaderItem(1, __qtablewidgetitem55)
-        __qtablewidgetitem56 = QTableWidgetItem()
-        __qtablewidgetitem56.setFont(font2);
-        self.listPrinter_tab.setHorizontalHeaderItem(2, __qtablewidgetitem56)
+        __qtablewidgetitem60 = QTableWidgetItem()
+        __qtablewidgetitem60.setFont(font2);
+        self.listPrinter_tab.setHorizontalHeaderItem(0, __qtablewidgetitem60)
+        __qtablewidgetitem61 = QTableWidgetItem()
+        __qtablewidgetitem61.setFont(font2);
+        self.listPrinter_tab.setHorizontalHeaderItem(1, __qtablewidgetitem61)
+        __qtablewidgetitem62 = QTableWidgetItem()
+        __qtablewidgetitem62.setFont(font2);
+        self.listPrinter_tab.setHorizontalHeaderItem(2, __qtablewidgetitem62)
         if (self.listPrinter_tab.rowCount() < 2):
             self.listPrinter_tab.setRowCount(2)
         self.listPrinter_tab.setObjectName(u"listPrinter_tab")
@@ -2839,13 +3532,48 @@ class Ui_MainWindow(object):
 "QToolBox::tab:selected { /* italicize selected tabs */\n"
 "    font: italic;\n"
 "    color: white;\n"
-"}")
-        self.page_3 = QWidget()
-        self.page_3.setObjectName(u"page_3")
-        self.page_3.setGeometry(QRect(0, 0, 782, 522))
-        self.horizontalLayout_43 = QHBoxLayout(self.page_3)
+"}\n"
+"\n"
+"\n"
+"QComboBox {\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	border-radius: 5px;\n"
+"	border: 1px solid rgb(0, 0, 0);\n"
+"	padding: 5px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"QComboBox:hover{\n"
+"	border: 2px solid rgb(64, 71, 88);\n"
+"}\n"
+"QComboBox::drop-down {\n"
+"	subcontrol-origin: padding;\n"
+"	subcontrol-position: top right;\n"
+"	width: 30px; \n"
+"    border-radius: 4px;\n"
+"	border:1px solid #000;\n"
+"	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);\n"
+"	background-position: center;\n"
+"	background-repeat: no-reperat;\n"
+"	background-color: rgb(36, 149,"
+                        " 255);\n"
+" }\n"
+"QComboBox QAbstractItemView {\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	padding: 10px;\n"
+"	selection-background-color: rgb(36, 149, 255);\n"
+"}\n"
+"\n"
+"")
+        self.toolBox_2.setFrameShadow(QFrame.Plain)
+        self.toolBox_2.setLineWidth(1)
+        self.printer1_page = QWidget()
+        self.printer1_page.setObjectName(u"printer1_page")
+        self.printer1_page.setGeometry(QRect(0, 0, 900, 482))
+        self.horizontalLayout_43 = QHBoxLayout(self.printer1_page)
         self.horizontalLayout_43.setObjectName(u"horizontalLayout_43")
-        self.frame_49 = QFrame(self.page_3)
+        self.frame_49 = QFrame(self.printer1_page)
         self.frame_49.setObjectName(u"frame_49")
         sizePolicy1.setHeightForWidth(self.frame_49.sizePolicy().hasHeightForWidth())
         self.frame_49.setSizePolicy(sizePolicy1)
@@ -2927,8 +3655,8 @@ class Ui_MainWindow(object):
         self.frame_79.setObjectName(u"frame_79")
         self.frame_79.setFrameShape(QFrame.StyledPanel)
         self.frame_79.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_67 = QVBoxLayout(self.frame_79)
-        self.verticalLayout_67.setObjectName(u"verticalLayout_67")
+        self.verticalLayout_88 = QVBoxLayout(self.frame_79)
+        self.verticalLayout_88.setObjectName(u"verticalLayout_88")
         self.imageDM_printer_1 = QLabel(self.frame_79)
         self.imageDM_printer_1.setObjectName(u"imageDM_printer_1")
         sizePolicy.setHeightForWidth(self.imageDM_printer_1.sizePolicy().hasHeightForWidth())
@@ -2936,13 +3664,13 @@ class Ui_MainWindow(object):
         self.imageDM_printer_1.setMinimumSize(QSize(0, 0))
         self.imageDM_printer_1.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
-        self.verticalLayout_67.addWidget(self.imageDM_printer_1)
+        self.verticalLayout_88.addWidget(self.imageDM_printer_1)
 
         self.rollNumberEdit_1 = QLineEdit(self.frame_79)
         self.rollNumberEdit_1.setObjectName(u"rollNumberEdit_1")
         self.rollNumberEdit_1.setMinimumSize(QSize(0, 32))
 
-        self.verticalLayout_67.addWidget(self.rollNumberEdit_1, 0, Qt.AlignBottom)
+        self.verticalLayout_88.addWidget(self.rollNumberEdit_1)
 
         self.dateEdit_1 = QDateEdit(self.frame_79)
         self.dateEdit_1.setObjectName(u"dateEdit_1")
@@ -2973,11 +3701,13 @@ class Ui_MainWindow(object):
 "	border-radius:5px;\n"
 "    width:30px;\n"
 "	image: url(:/icons/images/icons/cil-arrow-top.png);\n"
-"}")
+"}\n"
+"\n"
+"font: 12pt;")
         self.dateEdit_1.setCalendarPopup(True)
         self.dateEdit_1.setDate(QDate(2023, 12, 1))
 
-        self.verticalLayout_67.addWidget(self.dateEdit_1, 0, Qt.AlignBottom)
+        self.verticalLayout_88.addWidget(self.dateEdit_1)
 
         self.frame_86 = QFrame(self.frame_79)
         self.frame_86.setObjectName(u"frame_86")
@@ -2987,31 +3717,53 @@ class Ui_MainWindow(object):
         sizePolicy9.setHeightForWidth(self.frame_86.sizePolicy().hasHeightForWidth())
         self.frame_86.setSizePolicy(sizePolicy9)
         self.frame_86.setMaximumSize(QSize(16777215, 200))
-        self.frame_86.setStyleSheet(u"color: rgb(66, 66, 66);\n"
-"	font: 12pt \"Segoe UI\";")
+        self.frame_86.setStyleSheet(u"\n"
+"QComboBox {\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	border-radius: 5px;\n"
+"	border: 1px solid rgb(0, 0, 0);\n"
+"	padding: 5px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"QComboBox:hover{\n"
+"	border: 2px solid rgb(64, 71, 88);\n"
+"}\n"
+"QComboBox::drop-down {\n"
+"	subcontrol-origin: padding;\n"
+"	subcontrol-position: top right;\n"
+"	width: 30px; \n"
+"    border-radius: 4px;\n"
+"	border:1px solid #000;\n"
+"	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);\n"
+"	background-position: center;\n"
+"	background-repeat: no-reperat;\n"
+"	background-color: rgb(36, 149, 255);\n"
+" }\n"
+"QComboBox QAbstractItemView {\n"
+"	color: rgb(66, 66, 66);\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	padding: 10px;\n"
+"	selection-background-color: rgb(36, 149, 255);\n"
+"}\n"
+"\n"
+"")
         self.frame_86.setFrameShape(QFrame.StyledPanel)
         self.frame_86.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_88 = QVBoxLayout(self.frame_86)
-        self.verticalLayout_88.setSpacing(10)
-        self.verticalLayout_88.setObjectName(u"verticalLayout_88")
-        self.verticalLayout_88.setContentsMargins(0, 0, 0, 0)
-        self.templateRadioBnt_20 = QRadioButton(self.frame_86)
-        self.buttonGroup_2 = QButtonGroup(MainWindow)
-        self.buttonGroup_2.setObjectName(u"buttonGroup_2")
-        self.buttonGroup_2.addButton(self.templateRadioBnt_20)
-        self.templateRadioBnt_20.setObjectName(u"templateRadioBnt_20")
-        self.templateRadioBnt_20.setStyleSheet(u"")
+        self.verticalLayout_67 = QVBoxLayout(self.frame_86)
+        self.verticalLayout_67.setObjectName(u"verticalLayout_67")
+        self.verticalLayout_67.setContentsMargins(0, 0, 0, 5)
+        self.template_combobox = QComboBox(self.frame_86)
+        self.template_combobox.setObjectName(u"template_combobox")
+        self.template_combobox.setMinimumSize(QSize(300, 32))
+        self.template_combobox.setMaximumSize(QSize(16777215, 30))
+        self.template_combobox.setStyleSheet(u"font: 700 12pt \"Segoe UI\";")
+        self.template_combobox.setMaxVisibleItems(20)
 
-        self.verticalLayout_88.addWidget(self.templateRadioBnt_20)
-
-        self.templateRadioBnt_25 = QRadioButton(self.frame_86)
-        self.buttonGroup_2.addButton(self.templateRadioBnt_25)
-        self.templateRadioBnt_25.setObjectName(u"templateRadioBnt_25")
-
-        self.verticalLayout_88.addWidget(self.templateRadioBnt_25)
+        self.verticalLayout_67.addWidget(self.template_combobox)
 
 
-        self.verticalLayout_67.addWidget(self.frame_86, 0, Qt.AlignBottom)
+        self.verticalLayout_88.addWidget(self.frame_86)
 
 
         self.horizontalLayout_48.addWidget(self.frame_79)
@@ -3086,7 +3838,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_43.addWidget(self.frame_49)
 
-        self.frame_50 = QFrame(self.page_3)
+        self.frame_50 = QFrame(self.printer1_page)
         self.frame_50.setObjectName(u"frame_50")
         sizePolicy3.setHeightForWidth(self.frame_50.sizePolicy().hasHeightForWidth())
         self.frame_50.setSizePolicy(sizePolicy3)
@@ -3159,13 +3911,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_43.addWidget(self.frame_50)
 
-        self.toolBox_2.addItem(self.page_3, u"Novex 64-04")
-        self.page_4 = QWidget()
-        self.page_4.setObjectName(u"page_4")
-        self.page_4.setGeometry(QRect(0, 0, 782, 522))
-        self.horizontalLayout_45 = QHBoxLayout(self.page_4)
+        self.toolBox_2.addItem(self.printer1_page, u"Novex 64-04")
+        self.printer2_page = QWidget()
+        self.printer2_page.setObjectName(u"printer2_page")
+        self.printer2_page.setGeometry(QRect(0, 0, 900, 482))
+        self.horizontalLayout_45 = QHBoxLayout(self.printer2_page)
         self.horizontalLayout_45.setObjectName(u"horizontalLayout_45")
-        self.frame_67 = QFrame(self.page_4)
+        self.frame_67 = QFrame(self.printer2_page)
         self.frame_67.setObjectName(u"frame_67")
         sizePolicy1.setHeightForWidth(self.frame_67.sizePolicy().hasHeightForWidth())
         self.frame_67.setSizePolicy(sizePolicy1)
@@ -3297,6 +4049,15 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_80.addWidget(self.dateEdit_2)
 
+        self.template_combobox_2 = QComboBox(self.frame_80)
+        self.template_combobox_2.setObjectName(u"template_combobox_2")
+        self.template_combobox_2.setMinimumSize(QSize(300, 32))
+        self.template_combobox_2.setMaximumSize(QSize(16777215, 30))
+        self.template_combobox_2.setStyleSheet(u"font: 700 12pt \"Segoe UI\";")
+        self.template_combobox_2.setMaxVisibleItems(20)
+
+        self.verticalLayout_80.addWidget(self.template_combobox_2)
+
 
         self.horizontalLayout_50.addWidget(self.frame_80)
 
@@ -3370,7 +4131,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_45.addWidget(self.frame_67)
 
-        self.frame_73 = QFrame(self.page_4)
+        self.frame_73 = QFrame(self.printer2_page)
         self.frame_73.setObjectName(u"frame_73")
         sizePolicy1.setHeightForWidth(self.frame_73.sizePolicy().hasHeightForWidth())
         self.frame_73.setSizePolicy(sizePolicy1)
@@ -3443,7 +4204,300 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_45.addWidget(self.frame_73)
 
-        self.toolBox_2.addItem(self.page_4, u"Novex 64-06")
+        self.toolBox_2.addItem(self.printer2_page, u"Novex 64-06")
+        self.printer3_page = QWidget()
+        self.printer3_page.setObjectName(u"printer3_page")
+        self.printer3_page.setGeometry(QRect(0, 0, 900, 482))
+        self.horizontalLayout_58 = QHBoxLayout(self.printer3_page)
+        self.horizontalLayout_58.setObjectName(u"horizontalLayout_58")
+        self.frame_88 = QFrame(self.printer3_page)
+        self.frame_88.setObjectName(u"frame_88")
+        sizePolicy1.setHeightForWidth(self.frame_88.sizePolicy().hasHeightForWidth())
+        self.frame_88.setSizePolicy(sizePolicy1)
+        self.frame_88.setFrameShape(QFrame.StyledPanel)
+        self.frame_88.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_96 = QVBoxLayout(self.frame_88)
+        self.verticalLayout_96.setObjectName(u"verticalLayout_96")
+        self.verticalLayout_96.setContentsMargins(0, 0, 0, 0)
+        self.frame_94 = QFrame(self.frame_88)
+        self.frame_94.setObjectName(u"frame_94")
+        self.frame_94.setStyleSheet(u"QLabel {\n"
+"	color: rgb(66, 66, 66);\n"
+"	font: 16pt \"Segoe UI\";\n"
+"}")
+        self.frame_94.setFrameShape(QFrame.StyledPanel)
+        self.frame_94.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_97 = QVBoxLayout(self.frame_94)
+        self.verticalLayout_97.setSpacing(0)
+        self.verticalLayout_97.setObjectName(u"verticalLayout_97")
+        self.verticalLayout_97.setContentsMargins(0, 0, 0, 0)
+        self.frame_95 = QFrame(self.frame_94)
+        self.frame_95.setObjectName(u"frame_95")
+        self.frame_95.setStyleSheet(u"")
+        self.frame_95.setFrameShape(QFrame.StyledPanel)
+        self.frame_95.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_98 = QVBoxLayout(self.frame_95)
+        self.verticalLayout_98.setObjectName(u"verticalLayout_98")
+        self.Label_12 = QLabel(self.frame_95)
+        self.Label_12.setObjectName(u"Label_12")
+        self.Label_12.setStyleSheet(u"")
+
+        self.verticalLayout_98.addWidget(self.Label_12)
+
+        self.batchForPrint_label_3 = QLabel(self.frame_95)
+        self.batchForPrint_label_3.setObjectName(u"batchForPrint_label_3")
+        self.batchForPrint_label_3.setStyleSheet(u"")
+
+        self.verticalLayout_98.addWidget(self.batchForPrint_label_3)
+
+
+        self.verticalLayout_97.addWidget(self.frame_95)
+
+        self.frame_96 = QFrame(self.frame_94)
+        self.frame_96.setObjectName(u"frame_96")
+        self.frame_96.setFrameShape(QFrame.StyledPanel)
+        self.frame_96.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_99 = QVBoxLayout(self.frame_96)
+        self.verticalLayout_99.setObjectName(u"verticalLayout_99")
+        self.Label_13 = QLabel(self.frame_96)
+        self.Label_13.setObjectName(u"Label_13")
+        self.Label_13.setStyleSheet(u"")
+
+        self.verticalLayout_99.addWidget(self.Label_13)
+
+        self.nameForPrint_label_3 = QLabel(self.frame_96)
+        self.nameForPrint_label_3.setObjectName(u"nameForPrint_label_3")
+        self.nameForPrint_label_3.setStyleSheet(u"")
+
+        self.verticalLayout_99.addWidget(self.nameForPrint_label_3)
+
+
+        self.verticalLayout_97.addWidget(self.frame_96, 0, Qt.AlignTop)
+
+
+        self.verticalLayout_96.addWidget(self.frame_94, 0, Qt.AlignTop)
+
+        self.frame_97 = QFrame(self.frame_88)
+        self.frame_97.setObjectName(u"frame_97")
+        sizePolicy.setHeightForWidth(self.frame_97.sizePolicy().hasHeightForWidth())
+        self.frame_97.setSizePolicy(sizePolicy)
+        self.frame_97.setStyleSheet(u"")
+        self.frame_97.setFrameShape(QFrame.StyledPanel)
+        self.frame_97.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_55 = QHBoxLayout(self.frame_97)
+        self.horizontalLayout_55.setSpacing(0)
+        self.horizontalLayout_55.setObjectName(u"horizontalLayout_55")
+        self.horizontalLayout_55.setContentsMargins(0, 0, 0, 0)
+        self.frame_98 = QFrame(self.frame_97)
+        self.frame_98.setObjectName(u"frame_98")
+        self.frame_98.setFrameShape(QFrame.StyledPanel)
+        self.frame_98.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_100 = QVBoxLayout(self.frame_98)
+        self.verticalLayout_100.setObjectName(u"verticalLayout_100")
+        self.imageDM_printer_3 = QLabel(self.frame_98)
+        self.imageDM_printer_3.setObjectName(u"imageDM_printer_3")
+        self.imageDM_printer_3.setMinimumSize(QSize(0, 0))
+        self.imageDM_printer_3.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+
+        self.verticalLayout_100.addWidget(self.imageDM_printer_3)
+
+        self.rollNumberEdit_3 = QLineEdit(self.frame_98)
+        self.rollNumberEdit_3.setObjectName(u"rollNumberEdit_3")
+        self.rollNumberEdit_3.setMinimumSize(QSize(50, 32))
+
+        self.verticalLayout_100.addWidget(self.rollNumberEdit_3)
+
+        self.dateEdit_3 = QDateEdit(self.frame_98)
+        self.dateEdit_3.setObjectName(u"dateEdit_3")
+        self.dateEdit_3.setEnabled(True)
+        self.dateEdit_3.setMinimumSize(QSize(0, 32))
+        self.dateEdit_3.setStyleSheet(u"QDateEdit\n"
+"{\n"
+"	color: rgb(66, 66, 66);\n"
+"	font: 12pt \"Segoe UI\";\n"
+"    min-height:30px;\n"
+"    max-height:30px;\n"
+"    border-radius:5px;\n"
+"    border:1px solid;\n"
+"	border-color: rgb(66, 66, 66);\n"
+"padding-left: 10px;\n"
+"}\n"
+"\n"
+"QDateEdit:hover,.QDateEdit:focus\n"
+"{\n"
+"    border-radius:2px;\n"
+"    border:1px solid #0f6dbe;\n"
+"}\n"
+"\n"
+"QDateEdit::drop-down\n"
+"{\n"
+"	background-color: rgb(36, 149, 255);\n"
+"    border:1px solid;\n"
+"	border-radius:5px;\n"
+"    width:30px;\n"
+"	image: url(:/icons/images/icons/cil-arrow-top.png);\n"
+"}")
+        self.dateEdit_3.setCalendarPopup(True)
+        self.dateEdit_3.setDate(QDate(2023, 12, 1))
+
+        self.verticalLayout_100.addWidget(self.dateEdit_3)
+
+        self.template_combobox_3 = QComboBox(self.frame_98)
+        self.template_combobox_3.setObjectName(u"template_combobox_3")
+        self.template_combobox_3.setMinimumSize(QSize(300, 32))
+        self.template_combobox_3.setMaximumSize(QSize(16777215, 30))
+        self.template_combobox_3.setStyleSheet(u"font: 700 12pt \"Segoe UI\";")
+        self.template_combobox_3.setMaxVisibleItems(20)
+
+        self.verticalLayout_100.addWidget(self.template_combobox_3)
+
+
+        self.horizontalLayout_55.addWidget(self.frame_98)
+
+        self.frame_99 = QFrame(self.frame_97)
+        self.frame_99.setObjectName(u"frame_99")
+        self.frame_99.setStyleSheet(u"QPushButton {\n"
+"	font: 10pt \"Segoe UI\";\n"
+"	background-position:center;\n"
+"    background-repeat: no-repeat;\n"
+"	border: none;\n"
+"	border-radius: 20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	text-align: center;\n"
+"	padding-left: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 66, 66);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+        self.frame_99.setFrameShape(QFrame.StyledPanel)
+        self.frame_99.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_101 = QVBoxLayout(self.frame_99)
+        self.verticalLayout_101.setObjectName(u"verticalLayout_101")
+        self.pausePrint_btn_3 = QPushButton(self.frame_99)
+        self.pausePrint_btn_3.setObjectName(u"pausePrint_btn_3")
+        self.pausePrint_btn_3.setEnabled(True)
+        self.pausePrint_btn_3.setMinimumSize(QSize(0, 40))
+
+        self.verticalLayout_101.addWidget(self.pausePrint_btn_3)
+
+        self.endPrint_btn_3 = QPushButton(self.frame_99)
+        self.endPrint_btn_3.setObjectName(u"endPrint_btn_3")
+        self.endPrint_btn_3.setEnabled(True)
+        self.endPrint_btn_3.setMinimumSize(QSize(0, 40))
+
+        self.verticalLayout_101.addWidget(self.endPrint_btn_3)
+
+
+        self.horizontalLayout_55.addWidget(self.frame_99, 0, Qt.AlignBottom)
+
+
+        self.verticalLayout_96.addWidget(self.frame_97)
+
+        self.frame_100 = QFrame(self.frame_88)
+        self.frame_100.setObjectName(u"frame_100")
+        self.frame_100.setFrameShape(QFrame.StyledPanel)
+        self.frame_100.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_56 = QHBoxLayout(self.frame_100)
+        self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
+        self.Label_14 = QLabel(self.frame_100)
+        self.Label_14.setObjectName(u"Label_14")
+        self.Label_14.setStyleSheet(u"color: rgb(66, 66, 66);\n"
+"	font: 12pt \"Segoe UI\";")
+
+        self.horizontalLayout_56.addWidget(self.Label_14)
+
+        self.countFromPrint_line_3 = QLineEdit(self.frame_100)
+        self.countFromPrint_line_3.setObjectName(u"countFromPrint_line_3")
+        self.countFromPrint_line_3.setEnabled(False)
+
+        self.horizontalLayout_56.addWidget(self.countFromPrint_line_3)
+
+
+        self.verticalLayout_96.addWidget(self.frame_100)
+
+
+        self.horizontalLayout_58.addWidget(self.frame_88)
+
+        self.frame_101 = QFrame(self.printer3_page)
+        self.frame_101.setObjectName(u"frame_101")
+        sizePolicy1.setHeightForWidth(self.frame_101.sizePolicy().hasHeightForWidth())
+        self.frame_101.setSizePolicy(sizePolicy1)
+        self.frame_101.setMinimumSize(QSize(400, 0))
+        self.frame_101.setStyleSheet(u"QPushButton {\n"
+"	font: 10pt \"Segoe UI\";\n"
+"	background-position:center;\n"
+"    background-repeat: no-repeat;\n"
+"	border: none;\n"
+"	border-radius: 20px;\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(36, 149, 255);\n"
+"	text-align: center;\n"
+"	padding-left: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 66, 66);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(245, 246, 250);\n"
+"	color: rgb(0, 0, 0);\n"
+"}")
+        self.frame_101.setFrameShape(QFrame.StyledPanel)
+        self.frame_101.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_102 = QVBoxLayout(self.frame_101)
+        self.verticalLayout_102.setObjectName(u"verticalLayout_102")
+        self.verticalLayout_102.setContentsMargins(0, 0, 0, 0)
+        self.frame_102 = QFrame(self.frame_101)
+        self.frame_102.setObjectName(u"frame_102")
+        self.frame_102.setStyleSheet(u"QLabel {\n"
+"	color: rgb(66, 66, 66);\n"
+"	font: 16pt \"Segoe UI\";\n"
+"}")
+        self.frame_102.setFrameShape(QFrame.StyledPanel)
+        self.frame_102.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_57 = QHBoxLayout(self.frame_102)
+        self.horizontalLayout_57.setObjectName(u"horizontalLayout_57")
+        self.Label_15 = QLabel(self.frame_102)
+        self.Label_15.setObjectName(u"Label_15")
+        self.Label_15.setStyleSheet(u"")
+
+        self.horizontalLayout_57.addWidget(self.Label_15)
+
+
+        self.verticalLayout_102.addWidget(self.frame_102, 0, Qt.AlignTop)
+
+        self.frame_103 = QFrame(self.frame_101)
+        self.frame_103.setObjectName(u"frame_103")
+        sizePolicy.setHeightForWidth(self.frame_103.sizePolicy().hasHeightForWidth())
+        self.frame_103.setSizePolicy(sizePolicy)
+        self.frame_103.setFrameShape(QFrame.StyledPanel)
+        self.frame_103.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_103 = QVBoxLayout(self.frame_103)
+        self.verticalLayout_103.setObjectName(u"verticalLayout_103")
+        self.cameraTextEdit_3 = QPlainTextEdit(self.frame_103)
+        self.cameraTextEdit_3.setObjectName(u"cameraTextEdit_3")
+        self.cameraTextEdit_3.setStyleSheet(u"background-color: rgb(240, 240, 240);\n"
+"color: rgb(66, 66, 66);\n"
+"font: 14pt \"Segoe UI\";\n"
+"padding-left: 10px")
+        self.cameraTextEdit_3.setReadOnly(True)
+        self.cameraTextEdit_3.setMaximumBlockCount(20)
+
+        self.verticalLayout_103.addWidget(self.cameraTextEdit_3)
+
+
+        self.verticalLayout_102.addWidget(self.frame_103)
+
+
+        self.horizontalLayout_58.addWidget(self.frame_101)
+
+        self.toolBox_2.addItem(self.printer3_page, u"\u041f\u0440\u0438\u043d\u0442\u0435\u0440 \u043d\u0435 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d")
 
         self.verticalLayout_73.addWidget(self.toolBox_2)
 
@@ -3589,18 +4643,18 @@ class Ui_MainWindow(object):
         self.currentProd_Tab = QTableWidget(self.listProductContainer)
         if (self.currentProd_Tab.columnCount() < 4):
             self.currentProd_Tab.setColumnCount(4)
-        __qtablewidgetitem57 = QTableWidgetItem()
-        __qtablewidgetitem57.setFont(font5);
-        self.currentProd_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem57)
-        __qtablewidgetitem58 = QTableWidgetItem()
-        __qtablewidgetitem58.setFont(font2);
-        self.currentProd_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem58)
-        __qtablewidgetitem59 = QTableWidgetItem()
-        __qtablewidgetitem59.setFont(font2);
-        self.currentProd_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem59)
-        __qtablewidgetitem60 = QTableWidgetItem()
-        __qtablewidgetitem60.setFont(font2);
-        self.currentProd_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem60)
+        __qtablewidgetitem63 = QTableWidgetItem()
+        __qtablewidgetitem63.setFont(font5);
+        self.currentProd_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem63)
+        __qtablewidgetitem64 = QTableWidgetItem()
+        __qtablewidgetitem64.setFont(font2);
+        self.currentProd_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem64)
+        __qtablewidgetitem65 = QTableWidgetItem()
+        __qtablewidgetitem65.setFont(font2);
+        self.currentProd_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem65)
+        __qtablewidgetitem66 = QTableWidgetItem()
+        __qtablewidgetitem66.setFont(font2);
+        self.currentProd_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem66)
         self.currentProd_Tab.setObjectName(u"currentProd_Tab")
         self.currentProd_Tab.setEnabled(True)
         sizePolicy4.setHeightForWidth(self.currentProd_Tab.sizePolicy().hasHeightForWidth())
@@ -3929,15 +4983,15 @@ class Ui_MainWindow(object):
         self.currentLine_Tab = QTableWidget(self.listLineContainer)
         if (self.currentLine_Tab.columnCount() < 3):
             self.currentLine_Tab.setColumnCount(3)
-        __qtablewidgetitem61 = QTableWidgetItem()
-        __qtablewidgetitem61.setFont(font5);
-        self.currentLine_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem61)
-        __qtablewidgetitem62 = QTableWidgetItem()
-        __qtablewidgetitem62.setFont(font2);
-        self.currentLine_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem62)
-        __qtablewidgetitem63 = QTableWidgetItem()
-        __qtablewidgetitem63.setFont(font2);
-        self.currentLine_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem63)
+        __qtablewidgetitem67 = QTableWidgetItem()
+        __qtablewidgetitem67.setFont(font5);
+        self.currentLine_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem67)
+        __qtablewidgetitem68 = QTableWidgetItem()
+        __qtablewidgetitem68.setFont(font2);
+        self.currentLine_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem68)
+        __qtablewidgetitem69 = QTableWidgetItem()
+        __qtablewidgetitem69.setFont(font2);
+        self.currentLine_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem69)
         self.currentLine_Tab.setObjectName(u"currentLine_Tab")
         self.currentLine_Tab.setEnabled(True)
         sizePolicy4.setHeightForWidth(self.currentLine_Tab.sizePolicy().hasHeightForWidth())
@@ -4391,21 +5445,21 @@ class Ui_MainWindow(object):
         self.RollSearchData_Tab = QTableWidget(self.frame_58)
         if (self.RollSearchData_Tab.columnCount() < 3):
             self.RollSearchData_Tab.setColumnCount(3)
-        __qtablewidgetitem64 = QTableWidgetItem()
-        __qtablewidgetitem64.setFont(font5);
-        self.RollSearchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem64)
-        __qtablewidgetitem65 = QTableWidgetItem()
-        __qtablewidgetitem65.setFont(font5);
-        self.RollSearchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem65)
-        __qtablewidgetitem66 = QTableWidgetItem()
-        __qtablewidgetitem66.setFont(font5);
-        self.RollSearchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem66)
+        __qtablewidgetitem70 = QTableWidgetItem()
+        __qtablewidgetitem70.setFont(font5);
+        self.RollSearchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem70)
+        __qtablewidgetitem71 = QTableWidgetItem()
+        __qtablewidgetitem71.setFont(font5);
+        self.RollSearchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem71)
+        __qtablewidgetitem72 = QTableWidgetItem()
+        __qtablewidgetitem72.setFont(font5);
+        self.RollSearchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem72)
         if (self.RollSearchData_Tab.rowCount() < 1):
             self.RollSearchData_Tab.setRowCount(1)
-        __qtablewidgetitem67 = QTableWidgetItem()
-        __qtablewidgetitem67.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem67.setFont(font6);
-        self.RollSearchData_Tab.setItem(0, 0, __qtablewidgetitem67)
+        __qtablewidgetitem73 = QTableWidgetItem()
+        __qtablewidgetitem73.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem73.setFont(font6);
+        self.RollSearchData_Tab.setItem(0, 0, __qtablewidgetitem73)
         self.RollSearchData_Tab.setObjectName(u"RollSearchData_Tab")
         sizePolicy3.setHeightForWidth(self.RollSearchData_Tab.sizePolicy().hasHeightForWidth())
         self.RollSearchData_Tab.setSizePolicy(sizePolicy3)
@@ -4479,58 +5533,58 @@ class Ui_MainWindow(object):
         self.batchData_Tab_2 = QTableWidget(self.frame_53)
         if (self.batchData_Tab_2.columnCount() < 10):
             self.batchData_Tab_2.setColumnCount(10)
-        __qtablewidgetitem68 = QTableWidgetItem()
-        __qtablewidgetitem68.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(0, __qtablewidgetitem68)
-        __qtablewidgetitem69 = QTableWidgetItem()
-        __qtablewidgetitem69.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(1, __qtablewidgetitem69)
-        __qtablewidgetitem70 = QTableWidgetItem()
-        __qtablewidgetitem70.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(2, __qtablewidgetitem70)
-        __qtablewidgetitem71 = QTableWidgetItem()
-        __qtablewidgetitem71.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(3, __qtablewidgetitem71)
-        __qtablewidgetitem72 = QTableWidgetItem()
-        __qtablewidgetitem72.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(4, __qtablewidgetitem72)
-        __qtablewidgetitem73 = QTableWidgetItem()
-        __qtablewidgetitem73.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(5, __qtablewidgetitem73)
         __qtablewidgetitem74 = QTableWidgetItem()
         __qtablewidgetitem74.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(6, __qtablewidgetitem74)
+        self.batchData_Tab_2.setHorizontalHeaderItem(0, __qtablewidgetitem74)
         __qtablewidgetitem75 = QTableWidgetItem()
         __qtablewidgetitem75.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(7, __qtablewidgetitem75)
+        self.batchData_Tab_2.setHorizontalHeaderItem(1, __qtablewidgetitem75)
         __qtablewidgetitem76 = QTableWidgetItem()
         __qtablewidgetitem76.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(8, __qtablewidgetitem76)
+        self.batchData_Tab_2.setHorizontalHeaderItem(2, __qtablewidgetitem76)
         __qtablewidgetitem77 = QTableWidgetItem()
         __qtablewidgetitem77.setFont(font5);
-        self.batchData_Tab_2.setHorizontalHeaderItem(9, __qtablewidgetitem77)
+        self.batchData_Tab_2.setHorizontalHeaderItem(3, __qtablewidgetitem77)
+        __qtablewidgetitem78 = QTableWidgetItem()
+        __qtablewidgetitem78.setFont(font5);
+        self.batchData_Tab_2.setHorizontalHeaderItem(4, __qtablewidgetitem78)
+        __qtablewidgetitem79 = QTableWidgetItem()
+        __qtablewidgetitem79.setFont(font5);
+        self.batchData_Tab_2.setHorizontalHeaderItem(5, __qtablewidgetitem79)
+        __qtablewidgetitem80 = QTableWidgetItem()
+        __qtablewidgetitem80.setFont(font5);
+        self.batchData_Tab_2.setHorizontalHeaderItem(6, __qtablewidgetitem80)
+        __qtablewidgetitem81 = QTableWidgetItem()
+        __qtablewidgetitem81.setFont(font5);
+        self.batchData_Tab_2.setHorizontalHeaderItem(7, __qtablewidgetitem81)
+        __qtablewidgetitem82 = QTableWidgetItem()
+        __qtablewidgetitem82.setFont(font5);
+        self.batchData_Tab_2.setHorizontalHeaderItem(8, __qtablewidgetitem82)
+        __qtablewidgetitem83 = QTableWidgetItem()
+        __qtablewidgetitem83.setFont(font5);
+        self.batchData_Tab_2.setHorizontalHeaderItem(9, __qtablewidgetitem83)
         if (self.batchData_Tab_2.rowCount() < 1):
             self.batchData_Tab_2.setRowCount(1)
-        __qtablewidgetitem78 = QTableWidgetItem()
-        __qtablewidgetitem78.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem78.setFont(font6);
-        self.batchData_Tab_2.setItem(0, 1, __qtablewidgetitem78)
-        __qtablewidgetitem79 = QTableWidgetItem()
-        __qtablewidgetitem79.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab_2.setItem(0, 2, __qtablewidgetitem79)
-        __qtablewidgetitem80 = QTableWidgetItem()
-        __qtablewidgetitem80.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab_2.setItem(0, 3, __qtablewidgetitem80)
-        __qtablewidgetitem81 = QTableWidgetItem()
-        __qtablewidgetitem81.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab_2.setItem(0, 4, __qtablewidgetitem81)
-        __qtablewidgetitem82 = QTableWidgetItem()
-        __qtablewidgetitem82.setTextAlignment(Qt.AlignCenter);
-        self.batchData_Tab_2.setItem(0, 5, __qtablewidgetitem82)
-        __qtablewidgetitem83 = QTableWidgetItem()
-        __qtablewidgetitem83.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem83.setFont(font6);
-        self.batchData_Tab_2.setItem(0, 7, __qtablewidgetitem83)
+        __qtablewidgetitem84 = QTableWidgetItem()
+        __qtablewidgetitem84.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem84.setFont(font6);
+        self.batchData_Tab_2.setItem(0, 1, __qtablewidgetitem84)
+        __qtablewidgetitem85 = QTableWidgetItem()
+        __qtablewidgetitem85.setTextAlignment(Qt.AlignCenter);
+        self.batchData_Tab_2.setItem(0, 2, __qtablewidgetitem85)
+        __qtablewidgetitem86 = QTableWidgetItem()
+        __qtablewidgetitem86.setTextAlignment(Qt.AlignCenter);
+        self.batchData_Tab_2.setItem(0, 3, __qtablewidgetitem86)
+        __qtablewidgetitem87 = QTableWidgetItem()
+        __qtablewidgetitem87.setTextAlignment(Qt.AlignCenter);
+        self.batchData_Tab_2.setItem(0, 4, __qtablewidgetitem87)
+        __qtablewidgetitem88 = QTableWidgetItem()
+        __qtablewidgetitem88.setTextAlignment(Qt.AlignCenter);
+        self.batchData_Tab_2.setItem(0, 5, __qtablewidgetitem88)
+        __qtablewidgetitem89 = QTableWidgetItem()
+        __qtablewidgetitem89.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem89.setFont(font6);
+        self.batchData_Tab_2.setItem(0, 7, __qtablewidgetitem89)
         self.batchData_Tab_2.setObjectName(u"batchData_Tab_2")
         sizePolicy1.setHeightForWidth(self.batchData_Tab_2.sizePolicy().hasHeightForWidth())
         self.batchData_Tab_2.setSizePolicy(sizePolicy1)
@@ -4601,18 +5655,18 @@ class Ui_MainWindow(object):
         self.aggSearchData_Tab = QTableWidget(self.frame_55)
         if (self.aggSearchData_Tab.columnCount() < 4):
             self.aggSearchData_Tab.setColumnCount(4)
-        __qtablewidgetitem84 = QTableWidgetItem()
-        __qtablewidgetitem84.setFont(font5);
-        self.aggSearchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem84)
-        __qtablewidgetitem85 = QTableWidgetItem()
-        __qtablewidgetitem85.setFont(font5);
-        self.aggSearchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem85)
-        __qtablewidgetitem86 = QTableWidgetItem()
-        __qtablewidgetitem86.setFont(font5);
-        self.aggSearchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem86)
-        __qtablewidgetitem87 = QTableWidgetItem()
-        __qtablewidgetitem87.setFont(font5);
-        self.aggSearchData_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem87)
+        __qtablewidgetitem90 = QTableWidgetItem()
+        __qtablewidgetitem90.setFont(font5);
+        self.aggSearchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem90)
+        __qtablewidgetitem91 = QTableWidgetItem()
+        __qtablewidgetitem91.setFont(font5);
+        self.aggSearchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem91)
+        __qtablewidgetitem92 = QTableWidgetItem()
+        __qtablewidgetitem92.setFont(font5);
+        self.aggSearchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem92)
+        __qtablewidgetitem93 = QTableWidgetItem()
+        __qtablewidgetitem93.setFont(font5);
+        self.aggSearchData_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem93)
         if (self.aggSearchData_Tab.rowCount() < 20):
             self.aggSearchData_Tab.setRowCount(20)
         self.aggSearchData_Tab.setObjectName(u"aggSearchData_Tab")
@@ -4685,36 +5739,36 @@ class Ui_MainWindow(object):
         self.KiSearchData_Tab = QTableWidget(self.frame_56)
         if (self.KiSearchData_Tab.columnCount() < 8):
             self.KiSearchData_Tab.setColumnCount(8)
-        __qtablewidgetitem88 = QTableWidgetItem()
-        __qtablewidgetitem88.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem88)
-        __qtablewidgetitem89 = QTableWidgetItem()
-        __qtablewidgetitem89.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem89)
-        __qtablewidgetitem90 = QTableWidgetItem()
-        __qtablewidgetitem90.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem90)
-        __qtablewidgetitem91 = QTableWidgetItem()
-        __qtablewidgetitem91.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem91)
-        __qtablewidgetitem92 = QTableWidgetItem()
-        __qtablewidgetitem92.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(4, __qtablewidgetitem92)
-        __qtablewidgetitem93 = QTableWidgetItem()
-        __qtablewidgetitem93.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(5, __qtablewidgetitem93)
         __qtablewidgetitem94 = QTableWidgetItem()
         __qtablewidgetitem94.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(6, __qtablewidgetitem94)
+        self.KiSearchData_Tab.setHorizontalHeaderItem(0, __qtablewidgetitem94)
         __qtablewidgetitem95 = QTableWidgetItem()
         __qtablewidgetitem95.setFont(font5);
-        self.KiSearchData_Tab.setHorizontalHeaderItem(7, __qtablewidgetitem95)
+        self.KiSearchData_Tab.setHorizontalHeaderItem(1, __qtablewidgetitem95)
+        __qtablewidgetitem96 = QTableWidgetItem()
+        __qtablewidgetitem96.setFont(font5);
+        self.KiSearchData_Tab.setHorizontalHeaderItem(2, __qtablewidgetitem96)
+        __qtablewidgetitem97 = QTableWidgetItem()
+        __qtablewidgetitem97.setFont(font5);
+        self.KiSearchData_Tab.setHorizontalHeaderItem(3, __qtablewidgetitem97)
+        __qtablewidgetitem98 = QTableWidgetItem()
+        __qtablewidgetitem98.setFont(font5);
+        self.KiSearchData_Tab.setHorizontalHeaderItem(4, __qtablewidgetitem98)
+        __qtablewidgetitem99 = QTableWidgetItem()
+        __qtablewidgetitem99.setFont(font5);
+        self.KiSearchData_Tab.setHorizontalHeaderItem(5, __qtablewidgetitem99)
+        __qtablewidgetitem100 = QTableWidgetItem()
+        __qtablewidgetitem100.setFont(font5);
+        self.KiSearchData_Tab.setHorizontalHeaderItem(6, __qtablewidgetitem100)
+        __qtablewidgetitem101 = QTableWidgetItem()
+        __qtablewidgetitem101.setFont(font5);
+        self.KiSearchData_Tab.setHorizontalHeaderItem(7, __qtablewidgetitem101)
         if (self.KiSearchData_Tab.rowCount() < 1):
             self.KiSearchData_Tab.setRowCount(1)
-        __qtablewidgetitem96 = QTableWidgetItem()
-        __qtablewidgetitem96.setTextAlignment(Qt.AlignCenter);
-        __qtablewidgetitem96.setFont(font6);
-        self.KiSearchData_Tab.setItem(0, 3, __qtablewidgetitem96)
+        __qtablewidgetitem102 = QTableWidgetItem()
+        __qtablewidgetitem102.setTextAlignment(Qt.AlignCenter);
+        __qtablewidgetitem102.setFont(font6);
+        self.KiSearchData_Tab.setItem(0, 3, __qtablewidgetitem102)
         self.KiSearchData_Tab.setObjectName(u"KiSearchData_Tab")
         sizePolicy3.setHeightForWidth(self.KiSearchData_Tab.sizePolicy().hasHeightForWidth())
         self.KiSearchData_Tab.setSizePolicy(sizePolicy3)
@@ -4775,7 +5829,11 @@ class Ui_MainWindow(object):
 
         self.loginForm.setCurrentIndex(1)
         self.stackedWidget.setCurrentIndex(2)
+        self.comboBox.setCurrentIndex(-1)
         self.toolBox_2.setCurrentIndex(0)
+        self.template_combobox.setCurrentIndex(-1)
+        self.template_combobox_2.setCurrentIndex(-1)
+        self.template_combobox_3.setCurrentIndex(-1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -4784,14 +5842,14 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.userButton.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0439\u0442\u0438", None))
-        self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c", None))
-        self.lineButton.setText(QCoreApplication.translate("MainWindow", u"\u041b\u0438\u043d\u0438\u0438", None))
-        self.searchButton.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0438\u0441\u043a", None))
-        self.ordersButton.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437\u044b", None))
-        self.printFrameButton.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))
-        self.rollFrameButton.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0443\u043b\u043e\u043d\u044b", None))
-        self.settingsButton.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
-        self.exitButton.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0445\u043e\u0434", None))
+        self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"    \u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c", None))
+        self.createOrderButton.setText(QCoreApplication.translate("MainWindow", u"    \u0421\u043e\u0437\u0434\u0430\u0442\u044c", None))
+        self.ordersButton.setText(QCoreApplication.translate("MainWindow", u"    \u0417\u0430\u043a\u0430\u0437\u044b", None))
+        self.lineButton.setText(QCoreApplication.translate("MainWindow", u"    \u041b\u0438\u043d\u0438\u0438", None))
+        self.searchButton.setText(QCoreApplication.translate("MainWindow", u"    \u041f\u043e\u0438\u0441\u043a", None))
+        self.printFrameButton.setText(QCoreApplication.translate("MainWindow", u"    \u041f\u0435\u0447\u0430\u0442\u044c", None))
+        self.rollFrameButton.setText(QCoreApplication.translate("MainWindow", u"    \u0420\u0443\u043b\u043e\u043d\u044b", None))
+        self.settingsButton.setText(QCoreApplication.translate("MainWindow", u"    \u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c", None))
         self.closeAccButton.setText("")
         self.label_2.setText("")
@@ -4823,7 +5881,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem4 = self.batchOnLine_Tab.horizontalHeaderItem(2)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0447\u0438\u0442\u0430\u043d\u043e", None));
         ___qtablewidgetitem5 = self.batchOnLine_Tab.horizontalHeaderItem(3)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435", None));
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u0431\u0440\u0430\u043a\u043e\u0432\u0430\u043d\u043e", None));
+        ___qtablewidgetitem6 = self.batchOnLine_Tab.horizontalHeaderItem(4)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435", None));
         self.New_lineEdit.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u0443\u0447\u0435\u043d ", None))
         self.New_lineEdit.setPlaceholderText("")
         self.Work_lineEdit.setText(QCoreApplication.translate("MainWindow", u"\u0412 \u0440\u0430\u0431\u043e\u0442\u0435  ", None))
@@ -4835,49 +5895,51 @@ class Ui_MainWindow(object):
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0443\u043b\u043e\u043d\u044b", None))
         self.rollCode_edit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None))
         self.rollButton.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0440\u0430\u0442\u044c", None))
-        ___qtablewidgetitem6 = self.rollTable.horizontalHeaderItem(0)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem7 = self.rollTable.horizontalHeaderItem(1)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
-        ___qtablewidgetitem8 = self.rollTable.horizontalHeaderItem(2)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
-        ___qtablewidgetitem9 = self.rollTable.horizontalHeaderItem(3)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None));
+        ___qtablewidgetitem7 = self.rollTable.horizontalHeaderItem(0)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem8 = self.rollTable.horizontalHeaderItem(1)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
+        ___qtablewidgetitem9 = self.rollTable.horizontalHeaderItem(2)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem10 = self.rollTable.horizontalHeaderItem(3)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None));
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0447\u0430\u043b\u043e \u0440\u0430\u0431\u043e\u0442\u044b", None))
-        self.startLineButton.setText(QCoreApplication.translate("MainWindow", u"\u041b\u0438\u043d\u0438\u0438", None))
+        self.startCreateButton.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0437\u0434\u0430\u0442\u044c", None))
         self.startOrdersButton.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437\u044b", None))
+        self.startLineButton.setText(QCoreApplication.translate("MainWindow", u"\u041b\u0438\u043d\u0438\u0438", None))
         self.startSearchButton.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0438\u0441\u043a", None))
-        self.startSettingsButton.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438", None))
         self.serchLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0438\u0441\u043a \u0437\u0430\u043a\u0430\u0437\u0430", None))
-        ___qtablewidgetitem10 = self.activOrder_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem11 = self.activOrder_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437", None));
-        ___qtablewidgetitem12 = self.activOrder_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435", None));
-        ___qtablewidgetitem13 = self.activOrder_Tab.horizontalHeaderItem(3)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0436\u0438\u0437\u043d\u0438", None));
+        ___qtablewidgetitem11 = self.activOrder_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem12 = self.activOrder_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437", None));
+        ___qtablewidgetitem13 = self.activOrder_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435", None));
+        ___qtablewidgetitem14 = self.activOrder_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0436\u0438\u0437\u043d\u0438", None));
         self.refreshBatch_button.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c", None))
-        ___qtablewidgetitem14 = self.batchData_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
-        ___qtablewidgetitem15 = self.batchData_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
-        ___qtablewidgetitem16 = self.batchData_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e", None));
-        ___qtablewidgetitem17 = self.batchData_Tab.horizontalHeaderItem(3)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c", None));
-        ___qtablewidgetitem18 = self.batchData_Tab.horizontalHeaderItem(4)
-        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u043d\u0435\u0441\u0435\u043d\u043e", None));
-        ___qtablewidgetitem19 = self.batchData_Tab.horizontalHeaderItem(5)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u043d\u044b\u0445", None));
-        ___qtablewidgetitem20 = self.batchData_Tab.horizontalHeaderItem(6)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"\u0411\u0440\u0430\u043a", None));
-        ___qtablewidgetitem21 = self.batchData_Tab.horizontalHeaderItem(7)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"\u042d\u043a\u0441\u043f\u043e\u0440\u0442", None));
-        ___qtablewidgetitem22 = self.batchData_Tab.horizontalHeaderItem(8)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u041a\u041c", None));
-        ___qtablewidgetitem23 = self.batchData_Tab.horizontalHeaderItem(9)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435", None));
+        self.printHouse_checkBox.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437\u044b: \u0422\u0438\u043f\u043e\u0433\u0440\u0430\u0444\u0438\u044f", None))
+        self.mabufacture_checkBox.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437\u044b: \u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e", None))
+        ___qtablewidgetitem15 = self.batchData_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
+        ___qtablewidgetitem16 = self.batchData_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
+        ___qtablewidgetitem17 = self.batchData_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e", None));
+        ___qtablewidgetitem18 = self.batchData_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c", None));
+        ___qtablewidgetitem19 = self.batchData_Tab.horizontalHeaderItem(4)
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u043d\u0435\u0441\u0435\u043d\u043e", None));
+        ___qtablewidgetitem20 = self.batchData_Tab.horizontalHeaderItem(5)
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u043d\u044b\u0445", None));
+        ___qtablewidgetitem21 = self.batchData_Tab.horizontalHeaderItem(6)
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"\u0411\u0440\u0430\u043a", None));
+        ___qtablewidgetitem22 = self.batchData_Tab.horizontalHeaderItem(7)
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"\u042d\u043a\u0441\u043f\u043e\u0440\u0442", None));
+        ___qtablewidgetitem23 = self.batchData_Tab.horizontalHeaderItem(8)
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u041a\u041c", None));
+        ___qtablewidgetitem24 = self.batchData_Tab.horizontalHeaderItem(9)
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435", None));
 
         __sortingEnabled = self.batchData_Tab.isSortingEnabled()
         self.batchData_Tab.setSortingEnabled(False)
@@ -4890,65 +5952,81 @@ class Ui_MainWindow(object):
         self.sendBatchOnLine_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u043d\u0430 \u043b\u0438\u043d\u0438\u044e", None))
         self.exportBatch_btn.setText(QCoreApplication.translate("MainWindow", u"\u042d\u043a\u0441\u043f\u043e\u0440\u0442", None))
         self.printButton.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))
-        ___qtablewidgetitem24 = self.orderKITU_tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem25 = self.orderKITU_tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u043e\u0439 \u043a\u043e\u0434", None));
-        ___qtablewidgetitem26 = self.orderKITU_tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
-        ___qtablewidgetitem27 = self.ki_from_KITU_tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem28 = self.ki_from_KITU_tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
-        ___qtablewidgetitem29 = self.ki_from_KITU_tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
-        ___qtablewidgetitem30 = self.sendLine_tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem31 = self.sendLine_tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435", None));
-        ___qtablewidgetitem32 = self.sendLine_tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435", None));
+        self.KITUsendPrint_button.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u043d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c", None))
+        ___qtablewidgetitem25 = self.orderKITU_tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem26 = self.orderKITU_tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"\u0413\u0440\u0443\u043f\u043f\u043e\u0432\u043e\u0439 \u043a\u043e\u0434", None));
+        ___qtablewidgetitem27 = self.orderKITU_tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem28 = self.ki_from_KITU_tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem29 = self.ki_from_KITU_tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
+        ___qtablewidgetitem30 = self.ki_from_KITU_tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem31 = self.sendLine_tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem32 = self.sendLine_tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435", None));
+        ___qtablewidgetitem33 = self.sendLine_tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435", None));
         self.sendOrder_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c", None))
         self.canselOrder_btn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043c\u0435\u043d\u0430", None))
-        ___qtablewidgetitem33 = self.orderKM_tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem34 = self.orderKM_tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
-        ___qtablewidgetitem35 = self.orderKM_tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f", None));
-        ___qtablewidgetitem36 = self.orderKM_tab.horizontalHeaderItem(3)
-        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
-        ___qtablewidgetitem37 = self.orderKM_tab.horizontalHeaderItem(4)
-        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
-        ___qtablewidgetitem38 = self.orderKM_tab.horizontalHeaderItem(5)
-        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434  \u0440\u0443\u043b\u043e\u043d\u0430", None));
-        ___qtablewidgetitem39 = self.orderKM_tab.horizontalHeaderItem(6)
-        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0430\u0433\u0433\u0440\u0435\u0433\u0430\u0442\u0430", None));
-        ___qtablewidgetitem40 = self.orderKM_tab.horizontalHeaderItem(7)
-        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441 \u0430\u0433\u0440\u0435\u0433\u0430\u0442\u0430", None));
+        ___qtablewidgetitem34 = self.orderKM_tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem35 = self.orderKM_tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
+        ___qtablewidgetitem36 = self.orderKM_tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f", None));
+        ___qtablewidgetitem37 = self.orderKM_tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
+        ___qtablewidgetitem38 = self.orderKM_tab.horizontalHeaderItem(4)
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem39 = self.orderKM_tab.horizontalHeaderItem(5)
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434  \u0440\u0443\u043b\u043e\u043d\u0430", None));
+        ___qtablewidgetitem40 = self.orderKM_tab.horizontalHeaderItem(6)
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0430\u0433\u0433\u0440\u0435\u0433\u0430\u0442\u0430", None));
+        ___qtablewidgetitem41 = self.orderKM_tab.horizontalHeaderItem(7)
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441 \u0430\u0433\u0440\u0435\u0433\u0430\u0442\u0430", None));
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"\u0424\u043e\u0440\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0437\u0430\u0434\u0430\u043d\u0438\u044f", None))
+        self.comboBox.setCurrentText("")
+        self.comboBox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0435\u0440\u0435\u0442\u0435 \u043f\u0440\u043e\u0434\u0443\u043a\u0442", None))
+        self.createOrderBtn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0437\u0434\u0430\u0442\u044c", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 \u0441\u043e\u0437\u0434\u0430\u043d\u043d\u044b\u0435 \u0437\u0430\u043a\u0430\u0437\u044b", None))
+        ___qtablewidgetitem42 = self.lastOrder_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem43 = self.lastOrder_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u043d\u0438\u0435", None));
+        ___qtablewidgetitem44 = self.lastOrder_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f", None));
+        ___qtablewidgetitem45 = self.lastOrder_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"GTIN", None));
+        ___qtablewidgetitem46 = self.lastOrder_Tab.horizontalHeaderItem(4)
+        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435", None));
         self.startPrint_btn.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))
         self.allPrint_rbtn.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c \u0432\u0441\u0435\u0445 \u044d\u0442\u0438\u043a\u0435\u0442\u043e\u043a", None))
         self.countPrint_rbtn.setText(QCoreApplication.translate("MainWindow", u"\u0427\u0438\u0441\u043b\u043e \u044d\u0442\u0438\u043a\u0435\u0442\u043e\u043a", None))
         self.countPrint_line.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b-\u0432\u043e \u044d\u0442\u0438\u043a\u0435\u0442\u043e\u043a", None))
         self.save_rbtn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0432 \u0444\u0430\u0439\u043b", None))
         self.saveCodeInFile_btn.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
-        ___qtablewidgetitem41 = self.kmPrint_tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem42 = self.kmPrint_tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
-        ___qtablewidgetitem43 = self.kmPrint_tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem47 = self.kmPrint_tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem48 = self.kmPrint_tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
+        ___qtablewidgetitem49 = self.kmPrint_tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
         self.allCountLabel.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e \u0434\u043b\u044f \u043f\u0435\u0447\u0430\u0442\u0438 \u044d\u0442\u0438\u043a\u0435\u0442\u043e\u043a: ", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u043e\u0440 \u044d\u0442\u0438\u043a\u0435\u0442\u043e\u043a \u0434\u043b\u044f \u043f\u0435\u0447\u0430\u0442\u0438", None))
         self.startLabelPrint_Edit.setInputMask("")
         self.startLabelPrint_Edit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0447\u0430\u043b\u043e \u043f\u0435\u0447\u0430\u0442\u0438", None))
         self.endLabelPrint_Edit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043d\u0435\u0446 \u043f\u0435\u0447\u0430\u0442\u0438", None))
-        ___qtablewidgetitem44 = self.listPrinter_tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem45 = self.listPrinter_tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043d\u0442\u0435\u0440", None));
-        ___qtablewidgetitem46 = self.listPrinter_tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem50 = self.listPrinter_tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem51 = self.listPrinter_tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043d\u0442\u0435\u0440", None));
+        ___qtablewidgetitem52 = self.listPrinter_tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
         self.Label_8.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u043d\u0438\u0435:", None))
         self.selectedBatchForPrint_label.setText(QCoreApplication.translate("MainWindow", u"\"\"", None))
         self.Label_9.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435:", None))
@@ -4961,14 +6039,14 @@ class Ui_MainWindow(object):
         self.imageDM_printer_1.setText(QCoreApplication.translate("MainWindow", u"DataMatrix", None))
         self.rollNumberEdit_1.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None))
         self.dateEdit_1.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd.MM.yyyy", None))
-        self.templateRadioBnt_20.setText(QCoreApplication.translate("MainWindow", u"\u0428\u0430\u0431\u043b\u043e\u043d 20", None))
-        self.templateRadioBnt_25.setText(QCoreApplication.translate("MainWindow", u"\u0428\u0430\u0431\u043b\u043e\u043d 25", None))
+        self.template_combobox.setCurrentText("")
+        self.template_combobox.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0435\u0440\u0435\u0442\u0435 \u0448\u0430\u0431\u043b\u043e\u043d", None))
         self.pausePrint_btn_1.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u043f\u0435\u0447\u0430\u0442\u044c", None))
         self.endPrint_btn_1.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c \u043f\u0435\u0447\u0430\u0442\u044c", None))
         self.Label_2.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u043d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c:", None))
         self.countFromPrint_line_1.setPlaceholderText("")
         self.Label_11.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0430\u043c\u0435\u0440\u0430", None))
-        self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.page_3), QCoreApplication.translate("MainWindow", u"Novex 64-04", None))
+        self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.printer1_page), QCoreApplication.translate("MainWindow", u"Novex 64-04", None))
         self.Label_6.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u043d\u0438\u0435:", None))
         self.batchForPrint_label_2.setText("")
         self.Label_7.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435:", None))
@@ -4976,21 +6054,38 @@ class Ui_MainWindow(object):
         self.imageDM_printer_2.setText(QCoreApplication.translate("MainWindow", u"DataMatrix", None))
         self.rollNumberEdit_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None))
         self.dateEdit_2.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd.MM.yyyy", None))
+        self.template_combobox_2.setCurrentText("")
+        self.template_combobox_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0435\u0440\u0435\u0442\u0435 \u0448\u0430\u0431\u043b\u043e\u043d", None))
         self.pausePrint_btn_2.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u043f\u0435\u0447\u0430\u0442\u044c", None))
         self.endPrint_btn_2.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c \u043f\u0435\u0447\u0430\u0442\u044c", None))
         self.Label_3.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u043d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c:", None))
         self.countFromPrint_line_2.setPlaceholderText("")
         self.Label_10.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0430\u043c\u0435\u0440\u0430", None))
-        self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.page_4), QCoreApplication.translate("MainWindow", u"Novex 64-06", None))
+        self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.printer2_page), QCoreApplication.translate("MainWindow", u"Novex 64-06", None))
+        self.Label_12.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u043d\u0438\u0435:", None))
+        self.batchForPrint_label_3.setText("")
+        self.Label_13.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435:", None))
+        self.nameForPrint_label_3.setText("")
+        self.imageDM_printer_3.setText(QCoreApplication.translate("MainWindow", u"DataMatrix", None))
+        self.rollNumberEdit_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None))
+        self.dateEdit_3.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd.MM.yyyy", None))
+        self.template_combobox_3.setCurrentText("")
+        self.template_combobox_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0431\u0435\u0440\u0435\u0442\u0435 \u0448\u0430\u0431\u043b\u043e\u043d", None))
+        self.pausePrint_btn_3.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u043f\u0435\u0447\u0430\u0442\u044c", None))
+        self.endPrint_btn_3.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c \u043f\u0435\u0447\u0430\u0442\u044c", None))
+        self.Label_14.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u043d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c:", None))
+        self.countFromPrint_line_3.setPlaceholderText("")
+        self.Label_15.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0430\u043c\u0435\u0440\u0430", None))
+        self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.printer3_page), QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043d\u0442\u0435\u0440 \u043d\u0435 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430", None))
-        ___qtablewidgetitem47 = self.currentProd_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem48 = self.currentProd_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u043e\u0434\u0443\u043a\u0442", None));
-        ___qtablewidgetitem49 = self.currentProd_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"GTIN", None));
-        ___qtablewidgetitem50 = self.currentProd_Tab.horizontalHeaderItem(3)
-        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0432\u0442\u043e", None));
+        ___qtablewidgetitem53 = self.currentProd_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem54 = self.currentProd_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u043e\u0434\u0443\u043a\u0442", None));
+        ___qtablewidgetitem55 = self.currentProd_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem55.setText(QCoreApplication.translate("MainWindow", u"GTIN", None));
+        ___qtablewidgetitem56 = self.currentProd_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem56.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0432\u0442\u043e", None));
         self.addProductBtn.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c", None))
         self.editProductBtn.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c", None))
         self.deleteProductBtn.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c", None))
@@ -5007,12 +6102,12 @@ class Ui_MainWindow(object):
         self.addProductConfirmBtn.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c", None))
         self.addProductCanselBtn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043c\u0435\u043d\u0430", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u043b\u0438\u043d\u0438\u0438", None))
-        ___qtablewidgetitem51 = self.currentLine_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem52 = self.currentLine_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"\u041b\u0438\u043d\u0438\u044f", None));
-        ___qtablewidgetitem53 = self.currentLine_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"IP \u0410\u0434\u0440\u0435\u0441", None));
+        ___qtablewidgetitem57 = self.currentLine_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem57.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem58 = self.currentLine_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem58.setText(QCoreApplication.translate("MainWindow", u"\u041b\u0438\u043d\u0438\u044f", None));
+        ___qtablewidgetitem59 = self.currentLine_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem59.setText(QCoreApplication.translate("MainWindow", u"IP \u0410\u0434\u0440\u0435\u0441", None));
         self.addLineBtn.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c", None))
         self.editLineBtn.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c", None))
         self.deleteLineBtn.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c", None))
@@ -5031,69 +6126,69 @@ class Ui_MainWindow(object):
         self.advancedSearchBtn.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u043d\u044b\u0439", None))
         self.archive_checkBox.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0438\u0441\u043a \u0432 \u0430\u0440\u0445\u0438\u0432\u0435", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043b\u043e\u043d\u0430", None))
-        ___qtablewidgetitem54 = self.RollSearchData_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
-        ___qtablewidgetitem55 = self.RollSearchData_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem55.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None));
-        ___qtablewidgetitem56 = self.RollSearchData_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem56.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u041a\u041c", None));
+        ___qtablewidgetitem60 = self.RollSearchData_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem60.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
+        ___qtablewidgetitem61 = self.RollSearchData_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem61.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None));
+        ___qtablewidgetitem62 = self.RollSearchData_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem62.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u041a\u041c", None));
 
         __sortingEnabled1 = self.RollSearchData_Tab.isSortingEnabled()
         self.RollSearchData_Tab.setSortingEnabled(False)
         self.RollSearchData_Tab.setSortingEnabled(__sortingEnabled1)
 
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u043a\u0430\u0437", None))
-        ___qtablewidgetitem57 = self.batchData_Tab_2.horizontalHeaderItem(0)
-        ___qtablewidgetitem57.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
-        ___qtablewidgetitem58 = self.batchData_Tab_2.horizontalHeaderItem(1)
-        ___qtablewidgetitem58.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
-        ___qtablewidgetitem59 = self.batchData_Tab_2.horizontalHeaderItem(2)
-        ___qtablewidgetitem59.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e", None));
-        ___qtablewidgetitem60 = self.batchData_Tab_2.horizontalHeaderItem(3)
-        ___qtablewidgetitem60.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c", None));
-        ___qtablewidgetitem61 = self.batchData_Tab_2.horizontalHeaderItem(4)
-        ___qtablewidgetitem61.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u043d\u0435\u0441\u0435\u043d\u043e", None));
-        ___qtablewidgetitem62 = self.batchData_Tab_2.horizontalHeaderItem(5)
-        ___qtablewidgetitem62.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u043d\u044b\u0445", None));
-        ___qtablewidgetitem63 = self.batchData_Tab_2.horizontalHeaderItem(6)
-        ___qtablewidgetitem63.setText(QCoreApplication.translate("MainWindow", u"\u0411\u0440\u0430\u043a", None));
-        ___qtablewidgetitem64 = self.batchData_Tab_2.horizontalHeaderItem(7)
-        ___qtablewidgetitem64.setText(QCoreApplication.translate("MainWindow", u"\u042d\u043a\u0441\u043f\u043e\u0440\u0442", None));
-        ___qtablewidgetitem65 = self.batchData_Tab_2.horizontalHeaderItem(8)
-        ___qtablewidgetitem65.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u041a\u041c", None));
-        ___qtablewidgetitem66 = self.batchData_Tab_2.horizontalHeaderItem(9)
-        ___qtablewidgetitem66.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435", None));
+        ___qtablewidgetitem63 = self.batchData_Tab_2.horizontalHeaderItem(0)
+        ___qtablewidgetitem63.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
+        ___qtablewidgetitem64 = self.batchData_Tab_2.horizontalHeaderItem(1)
+        ___qtablewidgetitem64.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
+        ___qtablewidgetitem65 = self.batchData_Tab_2.horizontalHeaderItem(2)
+        ___qtablewidgetitem65.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e", None));
+        ___qtablewidgetitem66 = self.batchData_Tab_2.horizontalHeaderItem(3)
+        ___qtablewidgetitem66.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430 \u043f\u0435\u0447\u0430\u0442\u044c", None));
+        ___qtablewidgetitem67 = self.batchData_Tab_2.horizontalHeaderItem(4)
+        ___qtablewidgetitem67.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u043d\u0435\u0441\u0435\u043d\u043e", None));
+        ___qtablewidgetitem68 = self.batchData_Tab_2.horizontalHeaderItem(5)
+        ___qtablewidgetitem68.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u043b\u043d\u044b\u0445", None));
+        ___qtablewidgetitem69 = self.batchData_Tab_2.horizontalHeaderItem(6)
+        ___qtablewidgetitem69.setText(QCoreApplication.translate("MainWindow", u"\u0411\u0440\u0430\u043a", None));
+        ___qtablewidgetitem70 = self.batchData_Tab_2.horizontalHeaderItem(7)
+        ___qtablewidgetitem70.setText(QCoreApplication.translate("MainWindow", u"\u042d\u043a\u0441\u043f\u043e\u0440\u0442", None));
+        ___qtablewidgetitem71 = self.batchData_Tab_2.horizontalHeaderItem(8)
+        ___qtablewidgetitem71.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u041a\u041c", None));
+        ___qtablewidgetitem72 = self.batchData_Tab_2.horizontalHeaderItem(9)
+        ___qtablewidgetitem72.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435", None));
 
         __sortingEnabled2 = self.batchData_Tab_2.isSortingEnabled()
         self.batchData_Tab_2.setSortingEnabled(False)
         self.batchData_Tab_2.setSortingEnabled(__sortingEnabled2)
 
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0433\u0433\u0440\u0435\u0433\u0430\u0442", None))
-        ___qtablewidgetitem67 = self.aggSearchData_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem67.setText(QCoreApplication.translate("MainWindow", u"#", None));
-        ___qtablewidgetitem68 = self.aggSearchData_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem68.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
-        ___qtablewidgetitem69 = self.aggSearchData_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem69.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0418\u0413\u0423", None));
-        ___qtablewidgetitem70 = self.aggSearchData_Tab.horizontalHeaderItem(3)
-        ___qtablewidgetitem70.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"\u041a\u041c", None))
-        ___qtablewidgetitem71 = self.KiSearchData_Tab.horizontalHeaderItem(0)
-        ___qtablewidgetitem71.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
-        ___qtablewidgetitem72 = self.KiSearchData_Tab.horizontalHeaderItem(1)
-        ___qtablewidgetitem72.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f", None));
-        ___qtablewidgetitem73 = self.KiSearchData_Tab.horizontalHeaderItem(2)
-        ___qtablewidgetitem73.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u041a\u041c", None));
-        ___qtablewidgetitem74 = self.KiSearchData_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem73 = self.aggSearchData_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem73.setText(QCoreApplication.translate("MainWindow", u"#", None));
+        ___qtablewidgetitem74 = self.aggSearchData_Tab.horizontalHeaderItem(1)
         ___qtablewidgetitem74.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
-        ___qtablewidgetitem75 = self.KiSearchData_Tab.horizontalHeaderItem(4)
-        ___qtablewidgetitem75.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0430\u0433\u0433\u0440\u0435\u0433\u0430\u0442\u0430", None));
-        ___qtablewidgetitem76 = self.KiSearchData_Tab.horizontalHeaderItem(5)
-        ___qtablewidgetitem76.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None));
-        ___qtablewidgetitem77 = self.KiSearchData_Tab.horizontalHeaderItem(6)
-        ___qtablewidgetitem77.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
-        ___qtablewidgetitem78 = self.KiSearchData_Tab.horizontalHeaderItem(7)
-        ___qtablewidgetitem78.setText(QCoreApplication.translate("MainWindow", u"\u041a\u041c", None));
+        ___qtablewidgetitem75 = self.aggSearchData_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem75.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0418\u0413\u0423", None));
+        ___qtablewidgetitem76 = self.aggSearchData_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem76.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u043c\u0430\u0440\u043a\u0438\u0440\u043e\u0432\u043a\u0438", None));
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"\u041a\u041c", None))
+        ___qtablewidgetitem77 = self.KiSearchData_Tab.horizontalHeaderItem(0)
+        ___qtablewidgetitem77.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f", None));
+        ___qtablewidgetitem78 = self.KiSearchData_Tab.horizontalHeaderItem(1)
+        ___qtablewidgetitem78.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f", None));
+        ___qtablewidgetitem79 = self.KiSearchData_Tab.horizontalHeaderItem(2)
+        ___qtablewidgetitem79.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u043e\u043a \u0433\u043e\u0434\u043d\u043e\u0441\u0442\u0438 \u041a\u041c", None));
+        ___qtablewidgetitem80 = self.KiSearchData_Tab.horizontalHeaderItem(3)
+        ___qtablewidgetitem80.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0430\u0440\u0442\u0438\u044f", None));
+        ___qtablewidgetitem81 = self.KiSearchData_Tab.horizontalHeaderItem(4)
+        ___qtablewidgetitem81.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0430\u0433\u0433\u0440\u0435\u0433\u0430\u0442\u0430", None));
+        ___qtablewidgetitem82 = self.KiSearchData_Tab.horizontalHeaderItem(5)
+        ___qtablewidgetitem82.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434 \u0440\u0443\u043b\u043e\u043d\u0430", None));
+        ___qtablewidgetitem83 = self.KiSearchData_Tab.horizontalHeaderItem(6)
+        ___qtablewidgetitem83.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0443\u0441", None));
+        ___qtablewidgetitem84 = self.KiSearchData_Tab.horizontalHeaderItem(7)
+        ___qtablewidgetitem84.setText(QCoreApplication.translate("MainWindow", u"\u041a\u041c", None));
 
         __sortingEnabled3 = self.KiSearchData_Tab.isSortingEnabled()
         self.KiSearchData_Tab.setSortingEnabled(False)

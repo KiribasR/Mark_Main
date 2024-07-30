@@ -1,9 +1,9 @@
-('D:\\Project\\2022\\2 Новосибхолод. Маркировка '
- 'мороженого\\интерфейсНХ\\build\\main\\main.exe',
- False,
+('D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+ 'икре\\Mark_Main\\build\\main\\main.exe',
+ True,
  False,
  True,
- 'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico',
+ 'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
  None,
  False,
  False,
@@ -14,31 +14,31 @@
  None,
  None,
  None,
- 'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
- 'мороженого\\интерфейсНХ\\build\\main\\main.pkg',
+ 'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+ 'икре\\Mark_Main\\build\\main\\main.pkg',
  [('PYZ-00.pyz',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\build\\main\\PYZ-00.pyz',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\build\\main\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\build\\main\\localpycs\\struct.pyc',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\build\\main\\localpycs\\struct.pyc',
    'PYMODULE'),
   ('pyimod01_archive',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\build\\main\\localpycs\\pyimod01_archive.pyc',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\build\\main\\localpycs\\pyimod01_archive.pyc',
    'PYMODULE'),
   ('pyimod02_importers',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\build\\main\\localpycs\\pyimod02_importers.pyc',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\build\\main\\localpycs\\pyimod02_importers.pyc',
    'PYMODULE'),
   ('pyimod03_ctypes',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\build\\main\\localpycs\\pyimod03_ctypes.pyc',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\build\\main\\localpycs\\pyimod03_ctypes.pyc',
    'PYMODULE'),
   ('pyimod04_pywin32',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\build\\main\\localpycs\\pyimod04_pywin32.pyc',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\build\\main\\localpycs\\pyimod04_pywin32.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
@@ -62,13 +62,13 @@
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyside6.py',
    'PYSOURCE'),
   ('main',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\main.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\main.py',
    'PYSOURCE')],
  [],
  False,
  False,
- 1708575436,
- [('runw.exe',
-   'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
+ 1719310903,
+ [('run.exe',
+   'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')])

@@ -1,5 +1,5 @@
-('D:\\Project\\2022\\2 Новосибхолод. Маркировка '
- 'мороженого\\интерфейсНХ\\build\\main\\PYZ-00.pyz',
+('D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+ 'икре\\Mark_Main\\build\\main\\PYZ-00.pyz',
  [('PIL',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
@@ -214,8 +214,12 @@
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PIL\\features.py',
    'PYMODULE'),
   ('PrinterNovex',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\PrinterNovex.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\PrinterNovex.py',
+   'PYMODULE'),
+  ('PrinterTSC',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\PrinterTSC.py',
    'PYMODULE'),
   ('PySide6',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PySide6\\__init__.py',
@@ -722,8 +726,8 @@
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\server.py',
    'PYMODULE'),
   ('imageSave',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\imageSave.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\imageSave.py',
    'PYMODULE'),
   ('imp',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\imp.py',
@@ -800,54 +804,49 @@
   ('logging',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\logging\\__init__.py',
    'PYMODULE'),
+  ('logging.handlers',
+   'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\logging\\handlers.py',
+   'PYMODULE'),
   ('lzma',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\lzma.py',
    'PYMODULE'),
   ('main',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\main.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\main.py',
    'PYMODULE'),
   ('mimetypes',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\mimetypes.py',
    'PYMODULE'),
   ('modules', '-', 'PYMODULE'),
-  ('modules.PrinterTSC',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\PrinterTSC.py',
-   'PYMODULE'),
   ('modules.configFile',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\configFile.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\configFile.py',
    'PYMODULE'),
   ('modules.lines', '-', 'PYMODULE'),
   ('modules.lines.localLine',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\lines\\localLine.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\lines\\localLine.py',
    'PYMODULE'),
   ('modules.orders', '-', 'PYMODULE'),
   ('modules.orders.client',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\orders\\client.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\orders\\client.py',
    'PYMODULE'),
   ('modules.orders.queryDB',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\orders\\queryDB.py',
-   'PYMODULE'),
-  ('modules.resources_rc',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\resources_rc.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\orders\\queryDB.py',
    'PYMODULE'),
   ('modules.ui_functions',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\ui_functions.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\ui_functions.py',
    'PYMODULE'),
   ('modules.ui_scaner',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\ui_scaner.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\ui_scaner.py',
    'PYMODULE'),
   ('modules.ui_settings',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\modules\\ui_settings.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\modules\\ui_settings.py',
    'PYMODULE'),
   ('msilib',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\msilib\\__init__.py',
@@ -1211,6 +1210,10 @@
    'PYMODULE'),
   ('random',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\random.py',
+   'PYMODULE'),
+  ('resources_rc',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\resources_rc.py',
    'PYMODULE'),
   ('rlcompleter',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\rlcompleter.py',
@@ -1722,12 +1725,15 @@
   ('site',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site.py',
    'PYMODULE'),
+  ('smtplib',
+   'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\smtplib.py',
+   'PYMODULE'),
   ('socket',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py',
    'PYMODULE'),
   ('socketCamera',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\socketCamera.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\socketCamera.py',
    'PYMODULE'),
   ('socketserver',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socketserver.py',
@@ -1766,10 +1772,12 @@
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('treepoem',
-   'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\treepoem\\__init__.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\treepoem\\__init__.py',
    'PYMODULE'),
   ('treepoem.data',
-   'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\treepoem\\data.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\treepoem\\data.py',
    'PYMODULE'),
   ('tty',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tty.py',
@@ -1778,8 +1786,8 @@
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\typing.py',
    'PYMODULE'),
   ('ui_Master',
-   'D:\\Project\\2022\\2 Новосибхолод. Маркировка '
-   'мороженого\\интерфейсНХ\\ui_Master.py',
+   'D:\\Project\\2024\\1 Путина. Маркировка икры\\Софты по '
+   'икре\\Mark_Main\\ui_Master.py',
    'PYMODULE'),
   ('unittest',
    'C:\\Users\\Kirill\\AppData\\Local\\Programs\\Python\\Python310\\lib\\unittest\\__init__.py',

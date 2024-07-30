@@ -57,7 +57,7 @@ class TSC(QObject):
         #count = 0
         # Обработка КМ для печати
         for line in data:
-            self.code.append(line.strip().replace('\x1d', '~d029').replace('"', '~d34~'))   # .replace('<LF>', '~d0A~')
+            self.code.append(line.strip().replace('\x1d', '~d029').replace('"', '~d34~'))
 
         print(self.code)
         # Выбор шаблона для работы
@@ -134,6 +134,40 @@ class TSC(QObject):
                         self.template = self.template.replace('{SizeX}', dataDict.get(k))
                     if k == 'SizeY':
                         self.template = self.template.replace('{SizeY}', dataDict.get(k))
+            if key == 'Дата':
+                for k in dataDict:
+                    if k == 'Template':
+                        self.template = self.template + '\n' + (str(dataDict.get(k))).replace('date', '"date"')
+                    if k == 'PositionX':
+                        self.template = self.template.replace('{PositionX}', dataDict.get(k))
+                    if k == 'PositionY':
+                        self.template = self.template.replace('{PositionY}', dataDict.get(k))
+                    if k == 'Font':
+                        self.template = self.template.replace('{Font}', '"Font"')
+                        self.template = self.template.replace('Font', dataDict.get(k))
+                    if k == 'Rotation':
+                        self.template = self.template.replace('{Rotation}', dataDict.get(k))
+                    if k == 'MulX':
+                        self.template = self.template.replace('{MulX}', dataDict.get(k))
+                    if k == 'MulY':
+                        self.template = self.template.replace('{MulY}', dataDict.get(k))
+            if key == 'Продукт':
+                for k in dataDict:
+                    if k == 'Template':
+                        self.template = self.template + '\n' + (str(dataDict.get(k))).replace('prod', '"prod"')
+                    if k == 'PositionX':
+                        self.template = self.template.replace('{PositionX}', dataDict.get(k))
+                    if k == 'PositionY':
+                        self.template = self.template.replace('{PositionY}', dataDict.get(k))
+                    if k == 'Font':
+                        self.template = self.template.replace('{Font}', '"Font"')
+                        self.template = self.template.replace('Font', dataDict.get(k))
+                    if k == 'Rotation':
+                        self.template = self.template.replace('{Rotation}', dataDict.get(k))
+                    if k == 'MulX':
+                        self.template = self.template.replace('{MulX}', dataDict.get(k))
+                    if k == 'MulY':
+                        self.template = self.template.replace('{MulY}', dataDict.get(k))
             if key == 'Печать':
                 for k in dataDict:
                     self.template = self.template + '\n' + dataDict.get(k)
@@ -175,35 +209,36 @@ class TSC(QObject):
         while True:
             sent = 0
             sent_cnt = str(sent)
-            code = self.code.pop(0)
-            """if sent < 5:
+
+            if sent < 5:
                 while sent < 15:
                     try:
                         code = self.code.pop(0)
                         count += 1
                     except:
                         break
-                    else:"""
-            new_template = self.template.replace('{datamatrix}', code).replace('counter', f'{count:05}')
-            print(new_template)
-            self.sock.send(new_template.encode())
-            sent += 1
-            print(sent)
+                    else:
+                        new_template = self.template.replace('{datamatrix}', code).replace('counter', f'{count:05}').replace('date', self.date).replace('prod', self.name)
+                        print(new_template)
+                        self.sock.send(new_template.encode())
+                        sent += 1
+                        print(sent)
             print(sent)
             self.sock.send(EP.Status)
             res = self.sock.recv(255)
 
-            """if res.decode() == '\x00':
+            if res.decode() == '\x00':
                 print('Zakonchil')
                 time.sleep(2)
+                self.sock.close()
                 self.stopSignal.emit(True)
-                break"""
+                break
 
             if res.decode() == '\x20':
                 print('Printing')
             time.sleep(2)
             print(f'ответ от принтера: {res.strip()}')
-            #print(type(res))"""
+
 
     def stop(self):
         print('Закрываю поток')
@@ -212,3 +247,4 @@ class TSC(QObject):
         print('Очищаю')
         self.sock.send('CLS'.encode('utf-8'))
         #print(self.sock.recv(255))
+

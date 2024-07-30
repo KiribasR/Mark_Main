@@ -1,5 +1,7 @@
 import socket
 import time
+import os
+import json
 from enum import Enum
 from modules import configFile
 from PySide6.QtCore import *
@@ -32,7 +34,7 @@ class Novex(QObject):
     stopSignal = Signal(bool)
 
 
-    def __init__(self, data, idTemplate, datetime, name, configPrinter):
+    def __init__(self, idTemplate, data, datetime, name, configPrinter):
         super(Novex, self).__init__()
         printerIP = configFile.Config().configParser.get(configPrinter, 'IP')
         printerPort = configFile.Config().configParser.get(configPrinter, 'Port')
@@ -54,13 +56,25 @@ class Novex(QObject):
 
         print(self.code)
         # Выбор шаблона для работы
-        if idTemplate == 0:
-            self.template = configFile.Config().configParser.get(configPrinter, 'TemplateWithDate')
-        elif idTemplate == 1:
-            self.template = configFile.Config().configParser.get(configPrinter, 'TemplateDM')
-        elif idTemplate == 2:
-            self.template = configFile.Config().configParser.get(configPrinter, 'TemplateGroup')
+        with open(f'{os.path.dirname(os.path.abspath(__file__))}\\template\\Novex\\{self.id}.json', 'r', encoding='utf-8') as file:
+            self.content = json.load(file)
 
+        self.template = ''
+        for key in self.content:
+            dataDict = self.content.get(key)
+            for k in dataDict:
+                if k == 'Template':
+                    self.template = self.template + dataDict.get(k)
+                if k == 'SizeX':
+                    self.template = self.template.replace('{SizeX}', dataDict.get(k))
+                if k == 'SizeY':
+                    self.template = self.template.replace('{SizeY}', dataDict.get(k))
+            if key == 'Дата':
+               self.template = self.template.replace('{date}', self.date)
+
+            if key == 'Продукт':
+               self.template = self.template.replace('{product}', self.name)
+        print(self.template)
 
         try:
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -121,18 +135,10 @@ class Novex(QObject):
                                 break
                             else:
                                 # print(count)
-                                """if self.id == 1:
-                                    self.sock.send(self.template.replace('{datamatrix}', code).replace('{counter}',
-                                                                                                 f'{count:05}').encode())
-                                elif self.id == 0:"""
                                 self.sock.send(self.template.replace('{datamatrix}', code).replace('{counter}',
                                                                                             f'{count:05}').replace('{date}',
                                                                                             f'{self.date}').replace('{prod}',
                                                                                             f'{self.name}').encode())
-
-                                """elif self.id == 2:
-                                    self.sock.send(self.template.replace('{datamatrix}', code).replace('{counter}',
-                                                                                                 f'{count:05}').encode())"""
                                 sent += 1
                     self.sock.send(EP.Errors)
                     res = self.sock.recv(255)

@@ -26,7 +26,7 @@ class Client:
             self.sock.settimeout(60)
         except socket.error as err:
             logging.error(f'Ошибка подключения к серверу {err}')
-            print('Ошибка подключения к серверу')
+            print(f'Ошибка подключения к серверу {err}')
         else:
             print("Есть подключение к серверу")
 

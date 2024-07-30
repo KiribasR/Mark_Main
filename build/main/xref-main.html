@@ -15,10 +15,11 @@
 
 <div class="node">
   <a name="main.py"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/main.py" type="text/plain"><tt>main.py</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/main.py" type="text/plain"><tt>main.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#PySide6.QtCore">PySide6.QtCore</a>
  &#8226;   <a href="#PySide6.QtGui">PySide6.QtGui</a>
  &#8226;   <a href="#PySide6.QtWidgets">PySide6.QtWidgets</a>
@@ -159,12 +160,13 @@ imports:
  &#8226;   <a href="#heapq">heapq</a>
  &#8226;   <a href="#imageSave">imageSave</a>
  &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#json">json</a>
  &#8226;   <a href="#keyword">keyword</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#modules">modules</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.configFile">modules.configFile</a>
  &#8226;   <a href="#modules.lines">modules.lines</a>
  &#8226;   <a href="#modules.lines.localLine">modules.lines.localLine</a>
@@ -2420,17 +2422,43 @@ imported by:
 
 <div class="node">
   <a name="PrinterNovex"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/PrinterNovex.py" type="text/plain"><tt>PrinterNovex</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/PrinterNovex.py" type="text/plain"><tt>PrinterNovex</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide6.QtCore">PySide6.QtCore</a>
  &#8226;   <a href="#PySide6.QtGui">PySide6.QtGui</a>
  &#8226;   <a href="#PySide6.QtWidgets">PySide6.QtWidgets</a>
  &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#json">json</a>
  &#8226;   <a href="#modules">modules</a>
  &#8226;   <a href="#modules.configFile">modules.configFile</a>
  &#8226;   <a href="#modules.lines">modules.lines</a>
  &#8226;   <a href="#modules.lines.localLine">modules.lines.localLine</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#time">time</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main">main</a>
+ &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="PrinterTSC"></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/PrinterTSC.py" type="text/plain"><tt>PrinterTSC</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PySide6.QtCore">PySide6.QtCore</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#modules">modules</a>
+ &#8226;   <a href="#modules.configFile">modules.configFile</a>
+ &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#time">time</a>
 
@@ -2467,7 +2495,7 @@ imported by:
  &#8226;   <a href="#PySide6.QtGui">PySide6.QtGui</a>
  &#8226;   <a href="#PySide6.QtNetwork">PySide6.QtNetwork</a>
  &#8226;   <a href="#PySide6.QtWidgets">PySide6.QtWidgets</a>
- &#8226;   <a href="#modules.resources_rc">modules.resources_rc</a>
+ &#8226;   <a href="#resources_rc">resources_rc</a>
 
   </div>
 
@@ -2483,15 +2511,15 @@ imports:
   <div class="import">
 imported by:
     <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#PySide6.QtGui">PySide6.QtGui</a>
  &#8226;   <a href="#PySide6.QtNetwork">PySide6.QtNetwork</a>
  &#8226;   <a href="#PySide6.QtWidgets">PySide6.QtWidgets</a>
  &#8226;   <a href="#imageSave">imageSave</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
- &#8226;   <a href="#modules.resources_rc">modules.resources_rc</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
+ &#8226;   <a href="#resources_rc">resources_rc</a>
  &#8226;   <a href="#socketCamera">socketCamera</a>
  &#8226;   <a href="#ui_Master">ui_Master</a>
 
@@ -4713,10 +4741,12 @@ imported by:
  &#8226;   <a href="#email.encoders">email.encoders</a>
  &#8226;   <a href="#encodings.base64_codec">encodings.base64_codec</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#pycparser.ply.yacc">pycparser.ply.yacc</a>
  &#8226;   <a href="#secrets">secrets</a>
  &#8226;   <a href="#setuptools._distutils.command.upload">setuptools._distutils.command.upload</a>
  &#8226;   <a href="#shiboken6">shiboken6</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
@@ -5967,11 +5997,13 @@ imported by:
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#pkg_resources._vendor.pyparsing.core">pkg_resources._vendor.pyparsing.core</a>
  &#8226;   <a href="#pycparser.ply.lex">pycparser.ply.lex</a>
  &#8226;   <a href="#pyparsing.core">pyparsing.core</a>
  &#8226;   <a href="#setuptools._distutils.cygwinccompiler">setuptools._distutils.cygwinccompiler</a>
  &#8226;   <a href="#setuptools._vendor.pyparsing.core">setuptools._vendor.pyparsing.core</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
@@ -6277,6 +6309,7 @@ imported by:
  &#8226;   <a href="#pyparsing.common">pyparsing.common</a>
  &#8226;   <a href="#setuptools._vendor.pyparsing.common">setuptools._vendor.pyparsing.common</a>
  &#8226;   <a href="#setuptools._vendor.tomli._re">setuptools._vendor.tomli._re</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#xmlrpc.server">xmlrpc.server</a>
 
@@ -7825,6 +7858,7 @@ imports:
 imported by:
     <a href="#email.charset">email.charset</a>
  &#8226;   <a href="#email.header">email.header</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -7959,6 +7993,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#email.message">email.message</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -8054,9 +8089,11 @@ imported by:
  &#8226;   <a href="#email.policy">email.policy</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#importlib.metadata._adapters">importlib.metadata._adapters</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#setuptools._vendor.importlib_metadata._adapters">setuptools._vendor.importlib_metadata._adapters</a>
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -8153,7 +8190,9 @@ imported by:
  &#8226;   <a href="#email.message">email.message</a>
  &#8226;   <a href="#email.policy">email.policy</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#setuptools._distutils.command.check">setuptools._distutils.command.check</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -10682,12 +10721,12 @@ imported by:
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
  &#8226;   <a href="#PIL.PngImagePlugin">PIL.PngImagePlugin</a>
  &#8226;   <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#asyncio.constants">asyncio.constants</a>
  &#8226;   <a href="#http">http</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#pkg_resources._vendor.pyparsing.core">pkg_resources._vendor.pyparsing.core</a>
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#py_compile">py_compile</a>
@@ -11189,6 +11228,7 @@ imports:
 imported by:
     <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#secrets">secrets</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -11274,6 +11314,7 @@ imports:
 imported by:
     <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
@@ -11352,7 +11393,7 @@ imported by:
 
 <div class="node">
   <a name="imageSave"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/imageSave.py" type="text/plain"><tt>imageSave</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/imageSave.py" type="text/plain"><tt>imageSave</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide6.QtCore">PySide6.QtCore</a>
@@ -12015,6 +12056,7 @@ imported by:
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#importlib.resources">importlib.resources</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -12054,6 +12096,7 @@ imported by:
  &#8226;   <a href="#shiboken6">shiboken6</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#site">site</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -12199,9 +12242,13 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#json.decoder">json.decoder</a>
+    <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
+ &#8226;   <a href="#json.decoder">json.decoder</a>
  &#8226;   <a href="#json.encoder">json.encoder</a>
  &#8226;   <a href="#json.scanner">json.scanner</a>
+ &#8226;   <a href="#main">main</a>
+ &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#setuptools.config._validate_pyproject.error_reporting">setuptools.config._validate_pyproject.error_reporting</a>
  &#8226;   <a href="#setuptools.msvc">setuptools.msvc</a>
 
@@ -12371,6 +12418,7 @@ imported by:
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
  &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#modules.orders.client">modules.orders.client</a>
@@ -12386,6 +12434,42 @@ imported by:
  &#8226;   <a href="#setuptools.config.pyprojecttoml">setuptools.config.pyprojecttoml</a>
  &#8226;   <a href="#setuptools.logging">setuptools.logging</a>
  &#8226;   <a href="#unittest._log">unittest._log</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="logging.handlers"></a>
+  <a target="code" href="///C:/Users/Kirill/AppData/Local/Programs/Python/Python310/lib/logging/handlers.py" type="text/plain"><tt>logging.handlers</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#base64">base64</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#queue">queue</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#win32evtlog">win32evtlog</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#main">main</a>
+ &#8226;   <a href="#main.py">main.py</a>
 
   </div>
 
@@ -12415,18 +12499,20 @@ imported by:
 
 <div class="node">
   <a name="main"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/main.py" type="text/plain"><tt>main</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/main.py" type="text/plain"><tt>main</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#PySide6.QtCore">PySide6.QtCore</a>
  &#8226;   <a href="#PySide6.QtGui">PySide6.QtGui</a>
  &#8226;   <a href="#PySide6.QtWidgets">PySide6.QtWidgets</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#imageSave">imageSave</a>
+ &#8226;   <a href="#json">json</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#modules">modules</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.configFile">modules.configFile</a>
  &#8226;   <a href="#modules.lines">modules.lines</a>
  &#8226;   <a href="#modules.lines.localLine">modules.lines.localLine</a>
@@ -12435,6 +12521,7 @@ imports:
  &#8226;   <a href="#modules.orders.queryDB">modules.orders.queryDB</a>
  &#8226;   <a href="#modules.ui_functions">modules.ui_functions</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
+ &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#socketCamera">socketCamera</a>
  &#8226;   <a href="#sys">sys</a>
@@ -12445,8 +12532,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
- &#8226;   <a href="#modules.ui_functions">modules.ui_functions</a>
+    <a href="#modules.ui_functions">modules.ui_functions</a>
 
   </div>
 
@@ -12535,9 +12621,7 @@ imported by:
   <a target="code" href="-" type="text/plain"><tt>modules</tt></a>
 <span class="moduletype">NamespacePackage</span>  <div class="import">
 imports:
-    <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
- &#8226;   <a href="#modules.configFile">modules.configFile</a>
- &#8226;   <a href="#modules.resources_rc">modules.resources_rc</a>
+    <a href="#modules.configFile">modules.configFile</a>
  &#8226;   <a href="#modules.ui_functions">modules.ui_functions</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
  &#8226;   <a href="#modules.ui_settings">modules.ui_settings</a>
@@ -12546,47 +12630,19 @@ imports:
   <div class="import">
 imported by:
     <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#imageSave">imageSave</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.configFile">modules.configFile</a>
  &#8226;   <a href="#modules.lines">modules.lines</a>
  &#8226;   <a href="#modules.orders">modules.orders</a>
  &#8226;   <a href="#modules.orders.client">modules.orders.client</a>
  &#8226;   <a href="#modules.orders.queryDB">modules.orders.queryDB</a>
- &#8226;   <a href="#modules.resources_rc">modules.resources_rc</a>
  &#8226;   <a href="#modules.ui_functions">modules.ui_functions</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
  &#8226;   <a href="#modules.ui_settings">modules.ui_settings</a>
  &#8226;   <a href="#socketCamera">socketCamera</a>
- &#8226;   <a href="#ui_Master">ui_Master</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="modules.PrinterTSC"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/PrinterTSC.py" type="text/plain"><tt>modules.PrinterTSC</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#PySide6.QtCore">PySide6.QtCore</a>
- &#8226;   <a href="#enum">enum</a>
- &#8226;   <a href="#main">main</a>
- &#8226;   <a href="#modules">modules</a>
- &#8226;   <a href="#modules.configFile">modules.configFile</a>
- &#8226;   <a href="#modules.orders">modules.orders</a>
- &#8226;   <a href="#modules.orders.queryDB">modules.orders.queryDB</a>
- &#8226;   <a href="#socket">socket</a>
- &#8226;   <a href="#time">time</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#main">main</a>
- &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules">modules</a>
 
   </div>
 
@@ -12594,7 +12650,7 @@ imported by:
 
 <div class="node">
   <a name="modules.configFile"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/configFile.py" type="text/plain"><tt>modules.configFile</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/configFile.py" type="text/plain"><tt>modules.configFile</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#configparser">configparser</a>
@@ -12604,11 +12660,11 @@ imports:
   <div class="import">
 imported by:
     <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#imageSave">imageSave</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#modules">modules</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.orders.client">modules.orders.client</a>
  &#8226;   <a href="#modules.orders.queryDB">modules.orders.queryDB</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
@@ -12640,7 +12696,7 @@ imported by:
 
 <div class="node">
   <a name="modules.lines.localLine"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/lines/localLine.py" type="text/plain"><tt>modules.lines.localLine</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/lines/localLine.py" type="text/plain"><tt>modules.lines.localLine</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#modules.lines">modules.lines</a>
@@ -12672,7 +12728,6 @@ imports:
 imported by:
     <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.orders.client">modules.orders.client</a>
  &#8226;   <a href="#modules.orders.queryDB">modules.orders.queryDB</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
@@ -12683,7 +12738,7 @@ imported by:
 
 <div class="node">
   <a name="modules.orders.client"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/orders/client.py" type="text/plain"><tt>modules.orders.client</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/orders/client.py" type="text/plain"><tt>modules.orders.client</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#datetime">datetime</a>
@@ -12707,7 +12762,7 @@ imported by:
 
 <div class="node">
   <a name="modules.orders.queryDB"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/orders/queryDB.py" type="text/plain"><tt>modules.orders.queryDB</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/orders/queryDB.py" type="text/plain"><tt>modules.orders.queryDB</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#datetime">datetime</a>
@@ -12722,7 +12777,6 @@ imports:
 imported by:
     <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.orders">modules.orders</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
 
@@ -12731,27 +12785,8 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="modules.resources_rc"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/resources_rc.py" type="text/plain"><tt>modules.resources_rc</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#PySide6">PySide6</a>
- &#8226;   <a href="#PySide6.QtCore">PySide6.QtCore</a>
- &#8226;   <a href="#modules">modules</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#modules">modules</a>
- &#8226;   <a href="#ui_Master">ui_Master</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="modules.ui_functions"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/ui_functions.py" type="text/plain"><tt>modules.ui_functions</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/ui_functions.py" type="text/plain"><tt>modules.ui_functions</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#main">main</a>
@@ -12771,7 +12806,7 @@ imported by:
 
 <div class="node">
   <a name="modules.ui_scaner"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/ui_scaner.py" type="text/plain"><tt>modules.ui_scaner</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/ui_scaner.py" type="text/plain"><tt>modules.ui_scaner</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide6.QtCore">PySide6.QtCore</a>
@@ -12800,7 +12835,7 @@ imported by:
 
 <div class="node">
   <a name="modules.ui_settings"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/modules/ui_settings.py" type="text/plain"><tt>modules.ui_settings</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/modules/ui_settings.py" type="text/plain"><tt>modules.ui_settings</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#modules">modules</a>
@@ -13987,6 +14022,8 @@ imported by:
  &#8226;   <a href="#PIL.TiffImagePlugin">PIL.TiffImagePlugin</a>
  &#8226;   <a href="#PIL._util">PIL._util</a>
  &#8226;   <a href="#PIL.features">PIL.features</a>
+ &#8226;   <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#PySide6">PySide6</a>
  &#8226;   <a href="#_bootsubprocess">_bootsubprocess</a>
  &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
@@ -14054,7 +14091,9 @@ imported by:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#lzma">lzma</a>
+ &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#msilib">msilib</a>
@@ -14609,6 +14648,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#pycparser.ply.yacc">pycparser.ply.yacc</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
@@ -16664,6 +16704,7 @@ imports:
 imported by:
     <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
@@ -16832,6 +16873,7 @@ imported by:
  &#8226;   <a href="#json.scanner">json.scanner</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#msilib">msilib</a>
  &#8226;   <a href="#packaging._manylinux">packaging._manylinux</a>
@@ -16909,6 +16951,7 @@ imported by:
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#shiboken6">shiboken6</a>
  &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#string">string</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
  &#8226;   <a href="#tarfile">tarfile</a>
@@ -16973,6 +17016,23 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#posix">posix</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="resources_rc"></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/resources_rc.py" type="text/plain"><tt>resources_rc</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#PySide6">PySide6</a>
+ &#8226;   <a href="#PySide6.QtCore">PySide6.QtCore</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#ui_Master">ui_Master</a>
 
   </div>
 
@@ -21484,6 +21544,35 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="smtplib"></a>
+  <a target="code" href="///C:/Users/Kirill/AppData/Local/Programs/Python/Python310/lib/smtplib.py" type="text/plain"><tt>smtplib</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#base64">base64</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#email.base64mime">email.base64mime</a>
+ &#8226;   <a href="#email.generator">email.generator</a>
+ &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#hmac">hmac</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#ssl">ssl</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#logging.handlers">logging.handlers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="socket"></a>
   <a target="code" href="///C:/Users/Kirill/AppData/Local/Programs/Python/Python310/lib/socket.py" type="text/plain"><tt>socket</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -21501,6 +21590,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#_ssl">_ssl</a>
  &#8226;   <a href="#asyncio.base_events">asyncio.base_events</a>
  &#8226;   <a href="#asyncio.events">asyncio.events</a>
@@ -21514,7 +21604,7 @@ imported by:
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.server">http.server</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#modules.lines.localLine">modules.lines.localLine</a>
  &#8226;   <a href="#modules.orders.client">modules.orders.client</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -21522,6 +21612,7 @@ imported by:
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
  &#8226;   <a href="#platform">platform</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socketCamera">socketCamera</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#ssl">ssl</a>
@@ -21534,7 +21625,7 @@ imported by:
 
 <div class="node">
   <a name="socketCamera"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/socketCamera.py" type="text/plain"><tt>socketCamera</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/socketCamera.py" type="text/plain"><tt>socketCamera</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide6.QtCore">PySide6.QtCore</a>
@@ -21663,6 +21754,7 @@ imported by:
  &#8226;   <a href="#asyncio.sslproto">asyncio.sslproto</a>
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -21685,6 +21777,7 @@ imported by:
  &#8226;   <a href="#distutils.file_util">distutils.file_util</a>
  &#8226;   <a href="#genericpath">genericpath</a>
  &#8226;   <a href="#glob">glob</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#netrc">netrc</a>
  &#8226;   <a href="#ntpath">ntpath</a>
@@ -21814,6 +21907,7 @@ imported by:
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.shared_memory">multiprocessing.shared_memory</a>
@@ -22147,6 +22241,7 @@ imported by:
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#site">site</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
@@ -22409,6 +22504,7 @@ imported by:
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
@@ -22450,6 +22546,7 @@ imported by:
     <a href="#PIL.PdfImagePlugin">PIL.PdfImagePlugin</a>
  &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
  &#8226;   <a href="#PrinterNovex">PrinterNovex</a>
+ &#8226;   <a href="#PrinterTSC">PrinterTSC</a>
  &#8226;   <a href="#_datetime">_datetime</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#asyncio.base_events">asyncio.base_events</a>
@@ -22464,9 +22561,9 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main">main</a>
  &#8226;   <a href="#main.py">main.py</a>
- &#8226;   <a href="#modules.PrinterTSC">modules.PrinterTSC</a>
  &#8226;   <a href="#modules.orders.client">modules.orders.client</a>
  &#8226;   <a href="#modules.ui_scaner">modules.ui_scaner</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -22623,7 +22720,7 @@ imported by:
 
 <div class="node">
   <a name="treepoem"></a>
-  <a target="code" href="///C:/Users/Kirill/AppData/Local/Programs/Python/Python310/lib/site-packages/treepoem/__init__.py" type="text/plain"><tt>treepoem</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/treepoem/__init__.py" type="text/plain"><tt>treepoem</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#PIL">PIL</a>
@@ -22652,7 +22749,7 @@ imported by:
 
 <div class="node">
   <a name="treepoem.data"></a>
-  <a target="code" href="///C:/Users/Kirill/AppData/Local/Programs/Python/Python310/lib/site-packages/treepoem/data.py" type="text/plain"><tt>treepoem.data</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/treepoem/data.py" type="text/plain"><tt>treepoem.data</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#__future__">__future__</a>
@@ -22892,14 +22989,13 @@ imported by:
 
 <div class="node">
   <a name="ui_Master"></a>
-  <a target="code" href="///D:/Project/2022/2%20%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D1%85%D0%BE%D0%BB%D0%BE%D0%B4.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9D%D0%A5/ui_Master.py" type="text/plain"><tt>ui_Master</tt></a>
+  <a target="code" href="///D:/Project/2024/1%20%D0%9F%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B8%D0%BA%D1%80%D1%8B/%D0%A1%D0%BE%D1%84%D1%82%D1%8B%20%D0%BF%D0%BE%20%D0%B8%D0%BA%D1%80%D0%B5/Mark_Main/ui_Master.py" type="text/plain"><tt>ui_Master</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#PySide6.QtCore">PySide6.QtCore</a>
  &#8226;   <a href="#PySide6.QtGui">PySide6.QtGui</a>
  &#8226;   <a href="#PySide6.QtWidgets">PySide6.QtWidgets</a>
- &#8226;   <a href="#modules">modules</a>
- &#8226;   <a href="#modules.resources_rc">modules.resources_rc</a>
+ &#8226;   <a href="#resources_rc">resources_rc</a>
 
   </div>
   <div class="import">
@@ -23275,6 +23371,7 @@ imported by:
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
@@ -23562,6 +23659,7 @@ imported by:
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
  &#8226;   <a href="#setuptools.installer">setuptools.installer</a>
  &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -23683,6 +23781,28 @@ imported by:
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#setuptools._distutils.msvccompiler">setuptools._distutils.msvccompiler</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32evtlog"></a>
+  <a target="code" href="" type="text/plain"><tt>win32evtlog</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#logging.handlers">logging.handlers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32evtlogutil"></a>
+  <a target="code" href="" type="text/plain"><tt>win32evtlogutil</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#logging.handlers">logging.handlers</a>
 
   </div>
 
